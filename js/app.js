@@ -37,6 +37,7 @@ const data = [
     title: 'Online Registration Form',
     text: 'I built a responsive, mobile first registration web form using a range of HTML elements such as the input element of checkbox and submit button, the select element of a drop-down list and the text-area element of a multi-line input field.',
     link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-3-An-Online-Registration-Form",
+		link2: "https://vincentkman.github.io/TreeHouse-Techdegree-Unit-3-An-Online-Registration-Form/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x"
   },
@@ -45,6 +46,7 @@ const data = [
     title: 'Web Style Guide',
     text: "I created a style guide using Sass to transform the CSS style sheet with the use of variables, nesting, partials, imports, mixins, extends etc.",
 		link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-4-Web-Style-Guide",
+		link2: "https://vincentkman.github.io/TreeHouse-Techdegree-Unit-4-Web-Style-Guide/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x",
 		tool3: "fab fa-sass fa-stack-2x"
@@ -54,6 +56,7 @@ const data = [
     title: 'Interactive Photo Gallery',
     text: 'I built an interactive photo gallery using JavaScript to create a search box and a lightbox.',
 		link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-5-An-Interactive-Photo-Gallery",
+		link2: "https://vincentkman.github.io/TreeHouse-Techdegree-Unit-5-An-Interactive-Photo-Gallery/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x",
 		tool3: "fab fa-sass fa-stack-2x",
@@ -65,6 +68,7 @@ const data = [
     title: 'Game Show App',
     text: "I created a word guessing game using JavaScript to make players guess the correct phrases by typing the letters into the game.",
 		link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-6-Game-Show-App",
+		link2: "https://vincentkman.github.io/TreeHouse-Techdegree-Unit-6-Game-Show-App/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x",
 		tool3: "fab fa-sass fa-stack-2x",
@@ -75,6 +79,7 @@ const data = [
     title: 'WebApp Dashboard',
     text: "I built an interactive web dashboard using JavaScript to create tables, charts and graphics and other features that boost user interactivity.",
 		link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-7-WebApp-Dashboard",
+		link2: " https://vincentkman.github.io/TreeHouse-Techdegree-Unit-7-WebApp-Dashboard/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x",
 		tool3: "fab fa-sass fa-stack-2x",
@@ -85,6 +90,7 @@ const data = [
     title: 'Employee Directory API',
     text: "For this project challenge, I created an employee directory using JavaScript to connect with a third party API in order to access their data and display the employee profile onto my web page.",
 		link: "https://github.com/vincentman2702/TreeHouse-Techdegree-Unit-8-Use-an-API-to-Create-an-Employee-Directory",
+		link2: "https://vincentkman.github.io/TreeHouse-Techdegree-Unit-8-Use-an-API-to-Create-an-Employee-Directory/",
 		tool1: "fab fa-html5 fa-stack-2x",
 		tool2: "fab fa-css3-alt fa-stack-2x",
 		tool3: "fab fa-sass fa-stack-2x",
@@ -103,7 +109,7 @@ $.each(data, (index, value) => {
 
 				<div class="portfolio__btn padding">
 			 <a href=${data[index].link} target="_blank" class="btn btn-outline-dark">Github</a>
-			 <a href=${data[index].link} target="_blank" class="btn btn-outline-dark">See Live</a>
+			 <a href=${data[index].link2} target="_blank" class="btn btn-outline-dark">See Live</a>
 			 </div>
 			</div>
 			</div>
@@ -150,7 +156,7 @@ $(".cards").on('click', function() {
 			 </div>
 			 <div>
       <a href=${data[popupModal].link} target="_blank" class="btn btn-outline-dark">Github</a>
-			<a href=${data[popupModal].link} target="_blank" class="btn btn-outline-dark">See Live</a>
+			<a href=${data[popupModal].link2} target="_blank" class="btn btn-outline-dark">See Live</a>
 			</div>
 		</div>
   </div>
