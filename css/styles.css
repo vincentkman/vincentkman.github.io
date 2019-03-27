@@ -616,7 +616,7 @@ input:focus {
   left: 30%;
 }
 .portfolio__card-body {
-  margin: 1.25em;
+  margin: 3.125em;
 }
 .portfolio__card-body__zoomImage {
   overflow: hidden;
@@ -635,11 +635,12 @@ input:focus {
 @media (min-width: 769px) {
   .portfolio__card-title {
     position: absolute;
-    top: -5%;
+    top: 1%;
     left: 15%;
   }
 }
 .portfolio__project-img {
+  object-fit: cover;
   width: 0;
   height: 21.875em;
   max-width: 100%;
