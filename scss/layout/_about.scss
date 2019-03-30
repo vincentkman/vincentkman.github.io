@@ -3,7 +3,7 @@
   @include e(profile-img) {
     margin-top: em(50px);
     filter: grayscale(100%);
-    transition: all .5s ease-in-out;
+    transition: all $trns-duration ease-in-out;
     @include roundy($dim: 90%, $br: em(10px));
     @include  mq("medium") {
     @include dim($w: em(500px), $h: em(300px));
@@ -12,7 +12,6 @@
         filter: grayscale(0);
         transition: 1.5s;
         opacity: .8;
-        //
     }
   }
 }
