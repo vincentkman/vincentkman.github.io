@@ -1,17 +1,38 @@
+
 .about {
-  margin-top: em(50px);
-  @include e(profile-img) {
-    margin-top: em(50px);
-    filter: grayscale(100%);
-    transition: all $trns-duration ease-in-out;
-    @include roundy($dim: 90%, $br: em(10px));
-    @include  mq("medium") {
-    @include dim($w: em(500px), $h: em(300px));
+  @include e(carousel) {
+    img {
+      margin-top: em(50px);
+      // filter: grayscale(100%);
+      @include dim($w: em(400px), $h: em(300px));
+      border-radius: em(10px);
+      // transition: all $trns-duration ease-in-out;
+      @include  mq("medium") {
+      @include dim($w: em(500px), $h: em(350px));
+      }
+      // &:hover {
+      //     filter: grayscale(0);
+      //     transition: 1.5s;
+      //     opacity: .8;
+      // }
     }
-    &:hover {
-        filter: grayscale(0);
-        transition: 1.5s;
-        opacity: .8;
-    }
+
   }
 }
+
+//
+// .carousel img {
+//   margin-top: em(50px);
+//   // filter: grayscale(100%);
+//   @include dim($w: em(400px), $h: em(300px));
+//   border-radius: em(10px);
+//   // transition: all $trns-duration ease-in-out;
+//   @include  mq("medium") {
+//   @include dim($w: em(500px), $h: em(350px));
+//   }
+//   // &:hover {
+//   //     filter: grayscale(0);
+//   //     transition: 1.5s;
+//   //     opacity: .8;
+//   // }
+// }

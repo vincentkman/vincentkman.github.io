@@ -546,10 +546,10 @@ input:focus {
 
 @keyframes icon {
   0% {
-    transform: skewX(0);
+    transform: rotate(0);
   }
   100% {
-    transform: skewX(360deg);
+    transform: rotate(360deg);
   }
 }
 .contact__landing {
@@ -598,58 +598,44 @@ input:focus {
   color: #B2D57C;
 }
 .portfolio {
-  margin: 6.25em 0;
-  padding: 3.125em;
-  width: 100%;
+  min-height: 93.75em;
 }
 @media (min-width: 769px) {
   .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    min-height: 62.5em;
   }
 }
-.portfolio__btn {
-  position: absolute;
-  top: 80%;
-  left: 30%;
-}
-.portfolio__card-body {
-  margin: 3.125em;
-}
-.portfolio__card-body__zoomImage {
-  overflow: hidden;
-  text-align: center;
-}
-.portfolio__card-body__zoomImage:hover img {
-  transform: scale(1.2);
-}
-.portfolio__card-title {
-  position: absolute;
-  top: -8%;
-  left: 15%;
-  font-weight: 900;
-  color: #B2D57C;
-}
-@media (min-width: 769px) {
-  .portfolio__card-title {
-    position: absolute;
-    top: 1%;
-    left: 15%;
+@media (min-width: 769px) and (min-width: 1024px) {
+  .portfolio {
+    min-height: 50em;
   }
 }
-.portfolio__project-img {
-  object-fit: cover;
-  width: 0;
-  height: 21.875em;
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  opacity: 0.5;
+.portfolio__block {
+  width: 14.375em;
+  height: 10.625em;
+  position: absolute;
+  transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
+  box-shadow: 0.8125em 0.75em 0.9375em 0.3125em rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-.portfolio__project-img:hover {
-  opacity: 0.9;
+.portfolio__block img {
+  width: 14.375em;
+  height: 10.625em;
+  transition: all 0.6s;
+}
+.portfolio__block img:hover {
+  transform: translate(-3%, -3%);
+  opacity: 0.3;
+}
+.portfolio .img__description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.portfolio .img__text {
+  margin-top: 3.125em;
 }
 .portfolio__modal {
   width: 80%;
@@ -696,27 +682,149 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.about {
-  margin-top: 3.125em;
+#b1 {
+  top: 3.75em;
+  right: 5em;
 }
-.about__profile-img {
+@media (min-width: 769px) {
+  #b1 {
+    right: -10em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b1 {
+    right: -31.25em;
+  }
+}
+
+#b2 {
+  top: 13.75em;
+  right: 6.875em;
+}
+@media (min-width: 769px) {
+  #b2 {
+    top: 11.875em;
+    right: -5.9375em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b2 {
+    right: -27.1875em;
+  }
+}
+
+#b3 {
+  top: 23.75em;
+  right: 8.125em;
+}
+@media (min-width: 769px) {
+  #b3 {
+    top: 20em;
+    right: -1.875em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b3 {
+    right: -23.125em;
+  }
+}
+
+#b4 {
+  top: 34.0625em;
+  right: 9.375em;
+}
+@media (min-width: 769px) {
+  #b4 {
+    top: 11.875em;
+    right: -23.75em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b4 {
+    top: 11.25em;
+    right: -45em;
+  }
+}
+
+#b5 {
+  top: 44.375em;
+  right: 10.625em;
+}
+@media (min-width: 769px) {
+  #b5 {
+    top: 20em;
+    right: -19.6875em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b5 {
+    top: 19.375em;
+    right: -40.9375em;
+  }
+}
+
+#b6 {
+  top: 54.375em;
+  right: 12.5em;
+}
+@media (min-width: 769px) {
+  #b6 {
+    top: 28.125em;
+    right: -15.625em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b6 {
+    top: 27.5em;
+    right: -36.875em;
+  }
+}
+
+#b7 {
+  top: 64.375em;
+  right: 14.375em;
+}
+@media (min-width: 769px) {
+  #b7 {
+    top: 28.125em;
+    right: 2.1875em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b7 {
+    top: 3.75em;
+    right: -13.125em;
+  }
+}
+
+#b8 {
+  top: 74.375em;
+  right: 16.25em;
+}
+@media (min-width: 769px) {
+  #b8 {
+    top: 36.875em;
+    right: 6.5625em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  #b8 {
+    top: 11.875em;
+    right: -8.75em;
+  }
+}
+
+.about__carousel img {
   margin-top: 3.125em;
-  filter: grayscale(100%);
-  transition: all 0.5s ease-in-out;
-  width: 90%;
-  height: 90%;
+  width: 25em;
+  height: 18.75em;
   border-radius: 0.625em;
 }
 @media (min-width: 769px) {
-  .about__profile-img {
+  .about__carousel img {
     width: 31.25em;
-    height: 18.75em;
+    height: 21.875em;
   }
-}
-.about__profile-img:hover {
-  filter: grayscale(0);
-  transition: 1.5s;
-  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.css.map */
