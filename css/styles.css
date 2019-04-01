@@ -684,7 +684,7 @@ input:focus {
 
 #b1 {
   top: 3.75em;
-  right: 5em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b1 {
@@ -699,7 +699,7 @@ input:focus {
 
 #b2 {
   top: 13.75em;
-  right: 6.875em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b2 {
@@ -715,7 +715,7 @@ input:focus {
 
 #b3 {
   top: 23.75em;
-  right: 8.125em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b3 {
@@ -731,7 +731,7 @@ input:focus {
 
 #b4 {
   top: 34.0625em;
-  right: 9.375em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b4 {
@@ -748,7 +748,7 @@ input:focus {
 
 #b5 {
   top: 44.375em;
-  right: 10.625em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b5 {
@@ -765,7 +765,7 @@ input:focus {
 
 #b6 {
   top: 54.375em;
-  right: 12.5em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b6 {
@@ -782,7 +782,7 @@ input:focus {
 
 #b7 {
   top: 64.375em;
-  right: 14.375em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b7 {
@@ -799,7 +799,7 @@ input:focus {
 
 #b8 {
   top: 74.375em;
-  right: 16.25em;
+  right: 5.625em;
 }
 @media (min-width: 769px) {
   #b8 {

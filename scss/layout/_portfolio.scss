@@ -26,7 +26,7 @@
       }
     }
   }
-  
+
 
 .img__description {
   @include pos($pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0);
@@ -93,7 +93,7 @@
 
 #b1 {
   top: em(60px);
-  right: em(80px);
+  right: em(90px);
   @include mq("medium") {
     right: em(-160px);
     @include mq("large") {
@@ -104,7 +104,7 @@
 
 #b2 {
   top: em(220px);
-  right: em(110px);
+  right: em(90px);
   @include mq("medium") {
     top: em(190px);
     right: em(-95px);
@@ -116,7 +116,7 @@
 
 #b3 {
   top: em(380px);
-  right: em(130px);
+  right: em(90px);
   @include mq("medium") {
     top: em(320px);
     right: em(-30px);
@@ -128,7 +128,7 @@
 
 #b4 {
   top: em(545px);
-  right: em(150px);
+  right: em(90px);
   @include mq("medium") {
     top: em(190px);
     right: em(-380px);
@@ -141,7 +141,7 @@
 
 #b5 {
   top: em(710px);
-  right: em(170px);
+  right: em(90px);
   @include mq("medium") {
     top: em(320px);
     right: em(-315px);
@@ -154,7 +154,7 @@
 
 #b6 {
   top: em(870px);
-  right: em(200px);
+  right: em(90px);
   @include mq("medium") {
     top: em(450px);
     right: em(-250px);
@@ -167,7 +167,7 @@
 
 #b7 {
   top: em(1030px);
-  right: em(230px);
+  right: em(90px);
   @include mq("medium") {
     top: em(450px);
     right: em(35px);
@@ -180,7 +180,7 @@
 
 #b8 {
   top: em(1190px);
-  right: em(260px);
+  right: em(90px);
   @include mq("medium") {
     top: em(590px);
     right: em(105px);
