@@ -145,10 +145,10 @@ $.each(data, (index, value) => {
 
   let boxes = `
   <div class="col-md-6 col-lg-4">
-    <div id="${project++}" class="cards">
+    <div id="${project++}" class="project-card">
 			<div class=${data[index].block} id=${data[index].block2}>
-			<img src=${data[index].image} class="img__description">
-			<h5 class="img__text text-center">${data[index].title2}</h5>
+			<img src=${data[index].image} class="portfolio__block__img-description">
+			<h5 class="portfolio__block__img-text text-center">${data[index].title2}</h5>
 			</div>
 		</div>
   </div>
@@ -164,7 +164,7 @@ $("body").append(overlay);
 //  Event Handlers
 // ======================================
 
-$(".cards").on('click', function() {
+$(".project-card").on('click', function() {
   navbar.hide();
   let profile = parseInt($(this).attr('id'));
   let createBox = (popupModal) => {

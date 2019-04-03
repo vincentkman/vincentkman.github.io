@@ -10,7 +10,6 @@
   @include e(block) {
     width: em(230px);
     height: em(170px);
-    // background-color: royalblue;
     position: absolute;
     transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
     box-shadow: em(13px) em(12px) em(15px) em(5px) rgba(0,0,0,.3);
@@ -25,17 +24,115 @@
         opacity: .3;
       }
     }
+    @include e(img-description) {
+      @include pos($pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0);
+    }
+    @include e(img-text) {
+      margin-top: em(50px);
+    }
   }
 
 
-.img__description {
-  @include pos($pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0);
-}
 
-.img__text {
-  margin-top: em(50px);
-}
+  #b1 {
+    top: em(60px);
+    right: em(90px);
+    @include mq("medium") {
+      right: em(-160px);
+      @include mq("large") {
+        right: em(-500px);
+      }
+    }
+  }
 
+  #b2 {
+    top: em(220px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(190px);
+      right: em(-95px);
+      @include mq("large") {
+        right: em(-435px);
+      }
+    }
+  }
+
+  #b3 {
+    top: em(380px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(320px);
+      right: em(-30px);
+      @include mq("large") {
+        right: em(-370px);
+      }
+    }
+  }
+
+  #b4 {
+    top: em(545px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(190px);
+      right: em(-380px);
+      @include mq("large") {
+        top: em(180px);
+        right: em(-720px);
+      }
+    }
+  }
+
+  #b5 {
+    top: em(710px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(320px);
+      right: em(-315px);
+      @include mq("large") {
+        top: em(310px);
+        right: em(-655px);
+      }
+    }
+  }
+
+  #b6 {
+    top: em(870px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(450px);
+      right: em(-250px);
+      @include mq("large") {
+        top: em(440px);
+        right: em(-590px);
+      }
+    }
+  }
+
+  #b7 {
+    top: em(1030px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(450px);
+      right: em(35px);
+      @include mq("large") {
+        top: em(60px);
+        right: em(-210px);
+      }
+    }
+  }
+
+  #b8 {
+    top: em(1190px);
+    right: em(90px);
+    @include mq("medium") {
+      top: em(590px);
+      right: em(105px);
+      @include mq("large") {
+        top: em(190px);
+        right: em(-140px);
+      }
+    }
+  }
 
 
 
@@ -51,6 +148,7 @@
     transform: translate(-50%, -50%);
     padding: em(50px) em(60px);
     overflow-y: auto;
+
     img {
       width: em(240px);
       @include mq("medium") {
@@ -71,122 +169,5 @@
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
     background-color: rgba(0,0,0,0.5);
-  }
-}
-
-
-// #portfolio {
-//   height: 100vh;
-//   width: 100%;
-//   position: absolute;
-//   overflow: hidden;
-// }
-//
-// #msg {
-//   font-family: fantasy;
-//   font-size: em(80px);
-//   color: $white;
-//   line-height: em(70px);
-//   @include pos($pos: absolute, $top: 30%);
-// }
-
-
-#b1 {
-  top: em(60px);
-  right: em(90px);
-  @include mq("medium") {
-    right: em(-160px);
-    @include mq("large") {
-      right: em(-500px);
-    }
-  }
-}
-
-#b2 {
-  top: em(220px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(190px);
-    right: em(-95px);
-    @include mq("large") {
-      right: em(-435px);
-    }
-  }
-}
-
-#b3 {
-  top: em(380px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(320px);
-    right: em(-30px);
-    @include mq("large") {
-      right: em(-370px);
-    }
-  }
-}
-
-#b4 {
-  top: em(545px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(190px);
-    right: em(-380px);
-    @include mq("large") {
-      top: em(180px);
-      right: em(-720px);
-    }
-  }
-}
-
-#b5 {
-  top: em(710px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(320px);
-    right: em(-315px);
-    @include mq("large") {
-      top: em(310px);
-      right: em(-655px);
-    }
-  }
-}
-
-#b6 {
-  top: em(870px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(450px);
-    right: em(-250px);
-    @include mq("large") {
-      top: em(440px);
-      right: em(-590px);
-    }
-  }
-}
-
-#b7 {
-  top: em(1030px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(450px);
-    right: em(35px);
-    @include mq("large") {
-      top: em(60px);
-      right: em(-210px);
-    }
-  }
-}
-
-#b8 {
-  top: em(1190px);
-  right: em(90px);
-  @include mq("medium") {
-    top: em(590px);
-    right: em(105px);
-    @include mq("large") {
-      top: em(190px);
-      right: em(-140px);
-    }
   }
 }
