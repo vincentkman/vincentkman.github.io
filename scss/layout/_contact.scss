@@ -8,7 +8,7 @@
   }
   @include e(inner) {
     @include pos($pos: fixed, $top: 20%, $left: 0);
-    background-image: url('../images/background-hk2.JPG');
+    background-image: url('../images/background-hk.JPG');
     @extend %inner;
   }
   @include e(caption) {
