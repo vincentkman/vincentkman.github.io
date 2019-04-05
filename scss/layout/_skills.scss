@@ -1,5 +1,9 @@
 .skills {
+  background-color: $light-green;
+  @extend %box-shadow2;
+  padding-top: em(50px);
   @include e(icon) {
+    padding: em(20px) 0;
     &:hover {
       animation: icon 2s linear infinite;
     }
@@ -8,13 +12,10 @@
       font-size: em(65px);
     }
   }
-}
-
-@keyframes icon {
-  0% {
-    transform: rotate(0);
+  @include e(arrow) {
+    left: 49%;
   }
-  100% {
-      transform: rotate(360deg);
+  h1 {
+    @extend %hdln-prim;
   }
 }

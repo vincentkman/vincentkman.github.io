@@ -13,9 +13,7 @@
 //Headlines
 
 %hdln-prim {
-  font-size: em(30px);
   font-weight: $font-weight--ultra-bold;
-  color: $dark-grey;
   letter-spacing: $letter-space;
 }
 
@@ -107,7 +105,7 @@
   @include pos($pos: absolute, $top: 0, $left: 0);
   @include dim($w: 100%, $h: 100%);
 }
-   
+
 %inner {
   display: table;
   @include dim($w: 100%, $h: 100%);
@@ -135,4 +133,16 @@
     color: $green;
     filter: blur(15px);
     }
+}
+
+// Box Shadow
+%box-shadow1 {
+  box-shadow:
+    inset em(0px) em(11px) em(8px) em(-10px) #CCC;
+}
+
+%box-shadow2 {
+  box-shadow:
+    inset em(0px) em(11px) em(8px) em(-10px) #CCC,
+    inset em(0px) em(-11px) em(8px) em(-10px) #CCC;
 }

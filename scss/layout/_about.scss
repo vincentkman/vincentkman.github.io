@@ -1,13 +1,30 @@
 
 .about {
+  background-color: $blue;
+  @extend %box-shadow2;
+  padding-top: em(50px);
+  @include e(arrow) {
+    left: 49%;
+    margin-top: em(10px);
+  }
   @include e(carousel) {
     img {
-      margin-top: em(50px);
+      box-shadow: em(13px) em(12px) em(15px) em(5px) rgba(0,0,0,.3);
+      border: em(3px) solid $white;
+      margin: em(50px) 0;
       @include dim($w: em(400px), $h: em(300px));
-      border-radius: em(10px);
+      border-radius: $br--round;
       @include  mq("medium") {
       @include dim($w: em(500px), $h: em(350px));
       }
     }
+  }
+  h1 {
+    @extend %hdln-prim;
+  }
+  p {
+    color: $white;
+    margin: auto;
+    width: 50%;
   }
 }

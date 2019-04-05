@@ -1,7 +1,5 @@
-.headline--primary {
-  font-size: 1.875em;
+.about h1, .portfolio h1, .skills h1, .headline--primary {
   font-weight: 900;
-  color: #666;
   letter-spacing: 1px;
 }
 
@@ -11,21 +9,21 @@
   letter-spacing: 1px;
 }
 
-.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover {
+.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover, .arrow:hover {
   opacity: 0.8;
   transition: 0.5s;
 }
 
-.portfolio__modal__close-btn, .contact__social__icon--hover:hover {
+.portfolio__modal__close-btn, .contact__social__icon--hover:hover, .arrow:hover {
   cursor: pointer;
 }
-.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover {
+.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover, .arrow:hover {
   opacity: 0.5;
 }
-.portfolio__modal__close-btn:focus, .contact__social__icon--hover:focus:hover {
+.portfolio__modal__close-btn:focus, .contact__social__icon--hover:focus:hover, .arrow:focus:hover {
   opacity: 1;
 }
-.portfolio__modal__close-btn:active, .contact__social__icon--hover:active:hover {
+.portfolio__modal__close-btn:active, .contact__social__icon--hover:active:hover, .arrow:active:hover {
   opacity: 0.8;
 }
 
@@ -73,6 +71,14 @@
   z-index: -1;
   color: #B2D57C;
   filter: blur(15px);
+}
+
+.portfolio {
+  box-shadow: inset 0em 0.6875em 0.5em -0.625em #CCC;
+}
+
+.about, .skills {
+  box-shadow: inset 0em 0.6875em 0.5em -0.625em #CCC, inset 0em -0.6875em 0.5em -0.625em #CCC;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -464,8 +470,14 @@ body {
 .html {
   color: #e54d26;
 }
+.html__text-color {
+  color: #e54d26;
+}
 
 .css {
+  color: #2163af;
+}
+.css__text-color {
   color: #2163af;
 }
 
@@ -485,6 +497,46 @@ body {
   color: blue;
 }
 
+.arrow {
+  position: relative;
+  color: #fff;
+  font-size: 3.125em;
+  text-align: center;
+  animation: bouncearrow 5s infinite;
+}
+@keyframes icon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bouncearrow {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: 0.9375em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+@keyframes bouncearrow2 {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: 0.3125em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+.home {
+  box-shadow: 0.3125em 0.625em #888888;
+}
 .home__landing {
   width: 100%;
   height: 100vh;
@@ -502,19 +554,14 @@ body {
 }
 .home__caption p {
   font-size: 1.25em;
-  color: white;
+  color: #fff;
 }
 .home__caption button {
-  color: white;
+  color: #fff;
 }
-
-input {
-  border: 0;
-  outline: none;
-}
-
-input:focus {
-  outline: none;
+.home__caption__arrow {
+  left: 40%;
+  margin-top: 2.8125em;
 }
 
 .navbar {
@@ -536,6 +583,13 @@ input:focus {
   font-size: 1em !important;
 }
 
+.skills {
+  background-color: #33cc33;
+  padding-top: 3.125em;
+}
+.skills__icon {
+  padding: 1.25em 0;
+}
 .skills__icon:hover {
   animation: icon 2s linear infinite;
 }
@@ -543,14 +597,8 @@ input:focus {
   position: relative;
   font-size: 4.0625em;
 }
-
-@keyframes icon {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.skills__arrow {
+  left: 49%;
 }
 .contact__landing {
   width: 100%;
@@ -564,7 +612,7 @@ input:focus {
 }
 .contact__caption {
   position: absolute;
-  margin-top: -26.875em;
+  margin-top: -31.25em;
 }
 .contact__caption__link {
   color: white;
@@ -597,8 +645,16 @@ input:focus {
 .contact__social__icon--img {
   color: #B2D57C;
 }
+.contact__arrow {
+  left: 49%;
+  transform: rotate(180deg);
+  animation: bouncearrow2 5s infinite;
+}
+
 .portfolio {
-  min-height: 93.75em;
+  background-color: #F0F0F0;
+  padding-top: 3.125em;
+  min-height: 112.5em;
 }
 @media (min-width: 769px) {
   .portfolio {
@@ -607,7 +663,23 @@ input:focus {
 }
 @media (min-width: 769px) and (min-width: 1024px) {
   .portfolio {
-    min-height: 50em;
+    min-height: 56.25em;
+  }
+}
+.portfolio__arrow {
+  color: #0b0b0b !important;
+  position: absolute !important;
+  left: 49%;
+  margin-top: 33.75em;
+}
+@media (min-width: 769px) {
+  .portfolio__arrow {
+    margin-top: 17.8125em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  .portfolio__arrow {
+    margin-top: 15.9375em;
   }
 }
 .portfolio__block {
@@ -806,17 +878,32 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.about {
+  background-color: #4682B4;
+  padding-top: 3.125em;
+}
+.about__arrow {
+  left: 49%;
+  margin-top: 0.625em;
+}
 .about__carousel img {
-  margin-top: 3.125em;
+  box-shadow: 0.8125em 0.75em 0.9375em 0.3125em rgba(0, 0, 0, 0.3);
+  border: 0.1875em solid #fff;
+  margin: 3.125em 0;
   width: 25em;
   height: 18.75em;
-  border-radius: 0.625em;
+  border-radius: 50%;
 }
 @media (min-width: 769px) {
   .about__carousel img {
     width: 31.25em;
     height: 21.875em;
   }
+}
+.about p {
+  color: #fff;
+  margin: auto;
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

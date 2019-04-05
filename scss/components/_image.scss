@@ -1,10 +1,16 @@
 
 .html {
   color: $orange;
+  @include e(text-color) {
+    color: $orange;
+  }
 }
 
 .css {
   color: $dark-blue;
+  @include e(text-color) {
+    color: $dark-blue;
+  }
 }
 
 .sass {
@@ -21,4 +27,16 @@
 
 .python {
   color: blue;
+}
+
+
+.arrow {
+  position: relative;
+  color: $white;
+  font-size: em(50px);
+  text-align: center;
+  animation: bouncearrow 5s infinite;
+  &:hover {
+    @extend %mouseover;
+  }
 }

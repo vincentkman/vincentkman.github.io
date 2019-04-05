@@ -14,7 +14,7 @@
   @include e(caption) {
     @extend %caption;
     position: absolute;
-    margin-top: em(-430px);
+    margin-top: em(-500px);
     @include  e(link) {
       color: white;
     }
@@ -50,5 +50,10 @@
   }
   @include e(copyright) {
     @extend %glow-text;
+  }
+  @include e(arrow) {
+    left: 49%;
+    transform: rotate(180deg);
+    animation: bouncearrow2 5s infinite;
   }
 }

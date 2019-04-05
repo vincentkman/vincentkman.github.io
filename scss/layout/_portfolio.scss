@@ -1,23 +1,39 @@
 .portfolio {
-  min-height: em(1500px);
+  background-color: $white-smoke;
+  @extend %box-shadow1;
+  padding-top: em(50px);
+  min-height: em(1800px);
   @include mq("medium") {
     min-height: em(1000px);
     @include mq("large") {
-      min-height: em(800px);
+      min-height: em(900px);
     }
+  }
+  @include e(arrow) {
+    color: $black !important;
+    position: absolute !important;
+    left: 49%;
+    margin-top: em(540px);
+    @include mq("medium") {
+      margin-top: em(285px);
+      @include mq("large") {
+        margin-top: em(255px);
+      }
+    }
+  }
+  h1 {
+    @extend %hdln-prim;
   }
 
   @include e(block) {
-    width: em(230px);
-    height: em(170px);
+    @include dim($w:em(230px), $h:em(170px));
     position: absolute;
     transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
     box-shadow: em(13px) em(12px) em(15px) em(5px) rgba(0,0,0,.3);
     cursor: pointer;
 
     img {
-      width: em(230px);
-      height: em(170px);
+      @include dim($w:em(230px), $h:em(170px));
       transition: all .6s;
       &:hover {
         transform: translate(-3%, -3%);

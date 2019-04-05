@@ -57,8 +57,11 @@
       <h1 class="home__caption__title" data-text="Hello, I'm Vincent K Man">Hello, I'm Vincent K Man</h1>
       <p>Front End Developer</p>
       <div>
-        <a href="#about"><button class="btn btn-outline-light btn-lg">Find Out More</button></a>
+        <!-- <a href="#about"><button class="btn btn-outline-light btn-lg">Find Out More</button></a> -->
         <a href="#contact"><button class="btn btn-outline-light btn-lg">Get in Touch</button></a>
+      </div>
+      <div>
+      <a href="#about"><i class="home__caption__arrow arrow fas fa-angle-double-down"></i></a>
       </div>
     </div>
   </div>
@@ -67,11 +70,10 @@
     <div id="about" class="about container-fluid padding">
       <div class="row text-center">
         <div class="col-lg-12">
-          <h1 class="display-4">About</h1>
-          <p class="lead">I'm a self taught front-end web developer currently living in London, UK.<br>
-          I enjoy solving real world problems through coding. As I code every single day, my passion in Web Development continues to grow massively.</p>
-        </div>
-        <div class="col-lg-12">
+          <h1 class="display-4">About Me</h1>
+
+
+        <div class="col-lg-12 padding">
           <div id="carouselExampleIndicators" class="about__carousel carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,13 +92,19 @@
               </div>
             </div>
           </div>
-
+        </div>
+        <p class="lead text-center">Hi, my name is Vincent and I'm a self-taught Front-End Developer and work in Accounting based in London, UK. I enjoy solving real world problems and turning them into simple, mobile-first ready, fully responsive and beautiful designs. As I code every single day, my passion in web development continues to grow massively. After putting a lot of thought about my future career, I made a big decision and decided to transition to Web Development for a living. <br><br>
+        In the beginning of 2018, I started learning HTML5, CSS3, JavaScript, Git using free resources from Free Code Camp, Coursera etc. When I finally became serious in this field, I immediately signed up for Treehouse Front End Development Techdegree.<br><br>
+        Learning with Treehouse greatly boosted my coding skills and gave me a good foundation in building first class websites as a Front End Developer. When I am not coding or trying to position objects correctly, I usually cook, go to the gym or out photographing.
+        </p>
           </div>
         </div>
+        <div>
+        <a href="#skills"><i class="about__arrow arrow fas fa-angle-double-down"></i></a>
+        </div>
       </div>
-    </div> <!--End About Section-->
 
-    <hr class="my-4">
+    </div> <!--End About Section-->
 
     <div id="skills" class="skills container-fluid padding">
         <h1 class="text-center display-4">Skills</h1>
@@ -104,15 +112,18 @@
 
         <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
           <i class="html fab fa-html5 skills__icon--size"></i>
+          <span class="html__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">HTML</span>
         </div>
         <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
           <i class="css fab fa-css3-alt skills__icon--size"></i>
+          <span class="css__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">CSS</span>
         </div>
         <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
           <i class="sass fab fa-sass skills__icon--size"></i>
         </div>
         <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
           <i class="boot fas fa-bold skills__icon--size"></i>
+          <!-- <span class="icon-color fa-layers-text fa-inverse" data-fa-transform="up-5 right-65">OOTSTRAP</span> -->
         </div>
         <div class="skills__icon col-xs-12 col-sm-12 col-md-2">
           <i class="js fab fa-js-square skills__icon--size"></i>
@@ -121,25 +132,31 @@
           <i class="python fab fa-python skills__icon--size"></i>
         </div>
       </div>
-      <hr class="my-4">
+      <div>
+      <a href="#portfolio"><i class="skills__arrow arrow fas fa-angle-double-down"></i></a>
+      </div>
     </div>
 
     <!-- Portfolio -->
     <div class="row">
     <div class="col-12">
-      <h1 class="display-4 text-center">Portfolio</h1>
-      <p class="text-center">Click on the project image to see more!</p>
+
     <div class="container-fluid">
       <div class="row">
     <div id="portfolio" class="portfolio container-fluid">
+      <div>
+      <a href="#contact"><i class="portfolio__arrow arrow fas fa-angle-double-down"></i></a>
       </div>
-      <hr>
+      <h1 class="display-4 text-center">Portfolio</h1>
+      <p class="text-center">Click on the project image to see more!</p>
+      </div>
     </div>
     </div>
         <div id="modal" class="portfolio__modal"></div>
         <div id="overlay" class="portfolio__overlay"></div>
       </div>
     </div>
+  </div>
   </div>
 
 <footer>
@@ -151,6 +168,7 @@
     </div>
   </div>
 </div>
+
 <div class="contact__caption caption center-block">
   <div class="row text-center">
   <div class="col-md-12">
@@ -169,10 +187,12 @@
     </div>
   </div>
     <p class="contact__copyright text-center">Copyright &copy; 2019 Vincent K Man</p>
+    <div>
+    <a href="#home"><i class="contact__arrow arrow fas fa-angle-double-down"></i></a>
+    </div>
 </div>
-
-
 </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
