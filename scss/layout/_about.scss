@@ -1,11 +1,13 @@
 
 .about {
-  background-color: #008040;
+    background-color: $white-smoke;
+  // background-color: $blue;
   @extend %box-shadow2;
   padding-top: em(50px);
   @include e(arrow) {
     left: 49%;
     margin-top: em(10px);
+    color: $black;
   }
   @include e(carousel) {
     img {
@@ -23,8 +25,10 @@
     @extend %hdln-prim;
   }
   p {
-    color: $white;
+    // color: $white;
     margin: auto;
     width: 50%;
   }
 }
+
+// #008040

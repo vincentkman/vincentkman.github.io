@@ -10,7 +10,7 @@
     }
   }
   @include e(arrow) {
-    color: $black !important;
+    color: $black;
     @include pos($pos: absolute !important, $left: 49%);
     margin-top: em(540px);
     @include mq("medium") {

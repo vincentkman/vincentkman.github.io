@@ -123,3 +123,15 @@
     inset em(0px) em(11px) em(8px) em(-10px) #CCC,
     inset em(0px) em(-11px) em(8px) em(-10px) #CCC;
 }
+
+// Arrow
+
+%arrow {
+  position: relative;
+  font-size: em(50px);
+  text-align: center;
+  animation: bouncearrow 5s infinite;
+  &:hover {
+    @extend %mouseover;
+  }
+}
