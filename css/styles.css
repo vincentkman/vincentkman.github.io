@@ -451,12 +451,6 @@ body {
   padding-bottom: 3.125em;
 }
 
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #6648b1;
@@ -552,6 +546,14 @@ body {
   top: 50%;
   left: 10%;
 }
+.home__caption h1 {
+  font-size: 1.875em;
+}
+@media (min-width: 769px) {
+  .home__caption h1 {
+    font-size: 2.5em;
+  }
+}
 .home__caption p {
   font-size: 1.25em;
   color: #fff;
@@ -615,11 +617,11 @@ body {
   margin-top: -31.25em;
 }
 .contact__caption__link {
-  color: white;
+  color: #fff;
 }
 .contact__caption p {
   font-size: 1.25em;
-  color: white;
+  color: #fff;
 }
 .contact__social__icon {
   margin-left: -0.625em;
@@ -841,7 +843,7 @@ body {
   left: 50%;
   border-radius: 0.625em;
   background: white;
-  border: 1px solid #bbbbbb;
+  border: 0.0625em solid #bbbbbb;
   z-index: 1;
   display: none;
   text-align: center;
@@ -890,7 +892,7 @@ body {
   box-shadow: 0.8125em 0.75em 0.9375em 0.3125em rgba(0, 0, 0, 0.3);
   border: 0.1875em solid #fff;
   margin: 3.125em 0;
-  width: 25em;
+  width: 20.625em;
   height: 18.75em;
   border-radius: 50%;
 }

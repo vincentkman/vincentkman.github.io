@@ -18,6 +18,10 @@
     @include pos($pos: absolute, $top: 50%, $left: 10%);
     h1 {
       @extend %glow-text;
+      font-size: em(30px);
+      @include mq("medium") {
+        font-size: em(40px);
+      }
     }
     p {
       font-size: em(20px);

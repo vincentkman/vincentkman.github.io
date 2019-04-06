@@ -23,30 +23,6 @@
   letter-spacing: $letter-space;
 }
 
-// Border
-
-%border-style {
-  border: 2px solid $light-grey;
-  border-radius: $br--default;
-}
-
-
-%border-line {
-  border-top: 1px solid $grey;
-}
-
-%border-top {
-  border-top: 1px solid $light-grey;
-}
-
-%border-bottom {
-  border-bottom: 1px solid $light-grey;
-}
-
-%border-left {
-  border-left: 1px solid $light-grey;
-}
-
 // Transition
 
 %trn {
@@ -136,6 +112,7 @@
 }
 
 // Box Shadow
+
 %box-shadow1 {
   box-shadow:
     inset em(0px) em(11px) em(8px) em(-10px) #CCC;

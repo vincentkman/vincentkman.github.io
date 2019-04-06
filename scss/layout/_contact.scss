@@ -16,11 +16,11 @@
     position: absolute;
     margin-top: em(-500px);
     @include  e(link) {
-      color: white;
+      color: $white;
     }
     p {
       font-size: em(20px);
-      color: white;
+      color: $white;
     }
   }
   @include e(social) {

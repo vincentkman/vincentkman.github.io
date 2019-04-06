@@ -11,8 +11,7 @@
   }
   @include e(arrow) {
     color: $black !important;
-    position: absolute !important;
-    left: 49%;
+    @include pos($pos: absolute !important, $left: 49%);
     margin-top: em(540px);
     @include mq("medium") {
       margin-top: em(285px);
@@ -151,13 +150,11 @@
   }
 
 
-
-
   @include e(modal) {
     @include dim($w: 80%, $max-h: calc(120vh - 225px));
     @include pos($pos: fixed, $top: 50%, $left: 50%);
     @include roundy($br: em(10px), $bcolor: white);
-    border: 1px solid $light-grey;
+    border: em(1px) solid $light-grey;
     z-index: 1;
     display: none;
     text-align: center;
@@ -183,7 +180,7 @@
     @include dim($w: 100%, $h: 100%);
     display: none;
     transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    background-color: rgba(0,0,0,0.5);
+    transition: visibility 0s linear .25s, opacity .25s 0s, transform .25s;
+    background-color: rgba(0,0,0,.5);
   }
 }
