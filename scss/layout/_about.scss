@@ -1,6 +1,6 @@
 
 .about {
-  background-color: $blue;
+  background-color: #008040;
   @extend %box-shadow2;
   padding-top: em(50px);
   @include e(arrow) {

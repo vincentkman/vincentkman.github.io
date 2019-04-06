@@ -100,7 +100,7 @@
 
 %glow-text {
   color: white;
-  text-shadow: 0 0 20px $green;
+  text-shadow: 0 0 em(20px) $green;
   text-transform: uppercase;
   &:after {
     content: attr(data-text);

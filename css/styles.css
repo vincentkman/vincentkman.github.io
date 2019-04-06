@@ -60,7 +60,7 @@
 
 .contact__copyright, .home__caption h1 {
   color: white;
-  text-shadow: 0 0 20px #B2D57C;
+  text-shadow: 0 0 1.25em #B2D57C;
   text-transform: uppercase;
 }
 .contact__copyright:after, .home__caption h1:after {
@@ -586,7 +586,7 @@ body {
 }
 
 .skills {
-  background-color: #33cc33;
+  background-color: #0099cc;
   padding-top: 3.125em;
 }
 .skills__icon {
@@ -881,7 +881,7 @@ body {
 }
 
 .about {
-  background-color: #4682B4;
+  background-color: #008040;
   padding-top: 3.125em;
 }
 .about__arrow {
