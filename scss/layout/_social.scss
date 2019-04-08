@@ -1,0 +1,43 @@
+
+.social {
+  @include pos($pos: fixed, $top: 50%, $left: 0);
+  transform: translateY(-50%);
+  z-index: 100;
+
+  @include e(icons) {
+    padding: initial;
+    @include e(linkedin) {
+      background-color: $strong-blue;
+    }
+    @include e(github) {
+      background-color: $black;
+    }
+    @include e(twitter) {
+      background-color: $sky-blue ;
+    }
+    @include e(facebook) {
+      background-color: $dark-blue ;
+    }
+    @include e(instagram) {
+      background-color: $light-orange;
+    }
+    @include e(email) {
+      background-color: $green;
+    }
+
+    li {
+      border-radius: 0 $br--default $br--default 0;
+      height: em(35px);
+      width: em(40px);
+      list-style-type: none;
+      padding: em(6px) 0 0 em(12px);
+      margin-top: em(5px);
+      color: $white;
+      &:hover {
+        padding-left: em(30px);
+        width: em(80px);
+        transition: 1s;
+      }
+    }
+  }
+}

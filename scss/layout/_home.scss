@@ -9,7 +9,6 @@
   }
   @include e(inner) {
     @include pos($pos: fixed, $top: 0, $left: 0);
-    // background: linear-gradient(rgba(26, 188, 156, 0.7), rgba(231, 76, 60, 0.7)), url('../images/background-tokyo.jpg') center/cover no-repeat;
     background-image: url('../images/background-tokyo.jpg');
     @extend %inner;
   }

@@ -23,7 +23,7 @@ $blue           : #4682B4;
 $emerald        : #79EBD1;
 $orange         : #e54d26;
 $purple         : #563d7c;
-$sky-blue       : #77DAF7;
+$sky-blue       : #55acee;
 $green          : #B2D57C;
 $red            : #ff005b;
 $pink           : #CD6799;
@@ -32,7 +32,7 @@ $yellow         : #F7DF1D;
 $soft-red       : #D68C8B;
 
 $light-red      : #E8A0A0;
-$light-orange   : lighten($orange, 5%);
+$light-orange   : #ff4800;
 $light-blue     : #44AAC0;
 $light-purple   : #DCB3EE;
 $light-grey     : #bbbbbb;
@@ -41,13 +41,14 @@ $light-yellow   : #FFF8DC;
 $light-green    : #33cc33;
 
 $dark-emerald   : darken($emerald, 30%);
-$dark-blue      : #2163af;
+$dark-blue      : #3b5998;
 $dark-green     : darken($green, 10%);
 $dark-purple    : #4B4D72;
 $dark-grey      : #888888;
 $sea-green      : #20B2AA;
 $floral-white   : #eae9e1;
 $white-smoke    : #F0F0F0;
+$strong-blue    : #007bb5;
 
 // Color Usage
 

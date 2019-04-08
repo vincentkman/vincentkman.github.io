@@ -2,7 +2,7 @@
   background-color: $white-smoke;
   @extend %box-shadow1;
   padding-top: em(50px);
-  min-height: em(1800px);
+  min-height: em(2100px);
   @include mq("medium") {
     min-height: em(1000px);
     @include mq("large") {
@@ -12,7 +12,7 @@
   @include e(arrow) {
     color: $black;
     @include pos($pos: absolute !important, $left: 49%);
-    margin-top: em(540px);
+    margin-top: em(640px);
     @include mq("medium") {
       margin-top: em(285px);
       @include mq("large") {
@@ -26,10 +26,15 @@
 
   @include e(block) {
     @include dim($w:em(230px), $h:em(170px));
+
     position: absolute;
-    transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
+
     box-shadow: em(13px) em(12px) em(15px) em(5px) rgba(0,0,0,.3);
     cursor: pointer;
+    @include mq("medium") {
+      transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
+    }
+
 
     img {
       @include dim($w:em(230px), $h:em(170px));
@@ -48,10 +53,9 @@
   }
 
 
-
   #b1 {
     top: em(60px);
-    right: em(90px);
+    right: em(140px);
     @include mq("medium") {
       right: em(-160px);
       @include mq("large") {
@@ -61,8 +65,8 @@
   }
 
   #b2 {
-    top: em(220px);
-    right: em(90px);
+    top: em(280px);
+    right: em(140px);
     @include mq("medium") {
       top: em(190px);
       right: em(-95px);
@@ -73,8 +77,8 @@
   }
 
   #b3 {
-    top: em(380px);
-    right: em(90px);
+    top: em(500px);
+    right: em(140px);
     @include mq("medium") {
       top: em(320px);
       right: em(-30px);
@@ -85,8 +89,8 @@
   }
 
   #b4 {
-    top: em(545px);
-    right: em(90px);
+    top: em(720px);
+    right: em(140px);
     @include mq("medium") {
       top: em(190px);
       right: em(-380px);
@@ -98,8 +102,8 @@
   }
 
   #b5 {
-    top: em(710px);
-    right: em(90px);
+    top: em(1160px);
+    right: em(140px);
     @include mq("medium") {
       top: em(320px);
       right: em(-315px);
@@ -111,8 +115,8 @@
   }
 
   #b6 {
-    top: em(870px);
-    right: em(90px);
+    top: em(940px);
+    right: em(140px);
     @include mq("medium") {
       top: em(450px);
       right: em(-250px);
@@ -124,8 +128,8 @@
   }
 
   #b7 {
-    top: em(1030px);
-    right: em(90px);
+    top: em(1380px);
+    right: em(140px);
     @include mq("medium") {
       top: em(450px);
       right: em(35px);
@@ -137,8 +141,8 @@
   }
 
   #b8 {
-    top: em(1190px);
-    right: em(90px);
+    top: em(1600px);
+    right: em(140px);
     @include mq("medium") {
       top: em(590px);
       right: em(105px);

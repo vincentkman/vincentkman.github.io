@@ -9,32 +9,32 @@
   letter-spacing: 1px;
 }
 
-.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover, .arrow:hover {
+.portfolio__modal__close-btn:hover, .arrow:hover {
   opacity: 0.8;
   transition: 0.5s;
 }
 
-.portfolio__modal__close-btn, .contact__social__icon--hover:hover, .arrow:hover {
+.portfolio__modal__close-btn, .arrow:hover {
   cursor: pointer;
 }
-.portfolio__modal__close-btn:hover, .contact__social__icon--hover:hover, .arrow:hover {
+.portfolio__modal__close-btn:hover, .arrow:hover {
   opacity: 0.5;
 }
-.portfolio__modal__close-btn:focus, .contact__social__icon--hover:focus:hover, .arrow:focus:hover {
+.portfolio__modal__close-btn:focus, .arrow:focus:hover {
   opacity: 1;
 }
-.portfolio__modal__close-btn:active, .contact__social__icon--hover:active:hover, .arrow:active:hover {
+.portfolio__modal__close-btn:active, .arrow:active:hover {
   opacity: 0.8;
 }
 
-.contact__landing, .home__landing {
+.home__landing {
   position: relative;
   display: table;
   background: #E9ECEF;
   z-index: -1;
 }
 
-.contact__wrap, .home__wrap {
+.home__wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
   top: 0;
@@ -43,7 +43,7 @@
   height: 100%;
 }
 
-.contact__inner, .home__inner {
+.home__inner {
   display: table;
   width: 100%;
   height: 100%;
@@ -52,18 +52,18 @@
   filter: grayscale(100%);
 }
 
-.contact__caption, .home__caption {
+.home__caption {
   width: 100%;
   max-width: 100%;
   z-index: 1;
 }
 
-.contact__copyright, .home__caption h1 {
+.contact p, .home__caption h1 {
   color: white;
   text-shadow: 0 0 1.25em #B2D57C;
   text-transform: uppercase;
 }
-.contact__copyright:after, .home__caption h1:after {
+.contact p:after, .home__caption h1:after {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -475,10 +475,10 @@ body {
 }
 
 .css {
-  color: #2163af;
+  color: #3b5998;
 }
 .css__text-color {
-  color: #2163af;
+  color: #3b5998;
 }
 
 .sass {
@@ -511,17 +511,6 @@ body {
   }
   50% {
     top: 0.9375em;
-  }
-  100% {
-    top: 0em;
-  }
-}
-@keyframes bouncearrow2 {
-  0% {
-    top: 0em;
-  }
-  50% {
-    top: 0.3125em;
   }
   100% {
     top: 0em;
@@ -603,62 +592,34 @@ body {
   left: 49%;
   color: #0b0b0b;
 }
-.contact__landing {
+.contact {
+  min-height: 23.75em;
+  padding-top: 1.875em;
   width: 100%;
-  height: 75vh;
-}
-.contact__inner {
-  position: fixed;
-  top: 20%;
-  left: 0;
-  background-image: url("../images/background-hk.JPG");
-}
-.contact__caption {
-  position: absolute;
-  margin-top: -31.25em;
-}
-.contact__caption__link {
+  height: 60vh;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.contact__caption p {
+.contact img {
+  margin-bottom: 1.875em;
+}
+.contact p {
   font-size: 1.25em;
-  color: #fff;
-}
-.contact__social__icon {
-  margin-left: -0.625em;
-}
-@media (min-width: 769px) {
-  .contact__social__icon {
-    margin-left: -1.875em;
-  }
-}
-.contact__social__icon a {
-  font-size: 3.75em;
-  display: inline-block;
-  padding: 0.125em;
-}
-@media (min-width: 769px) {
-  .contact__social__icon a {
-    padding: 0.5em;
-  }
-}
-.contact__social__icon--hover:hover {
-  color: #bbbbbb;
-}
-.contact__social__icon--img {
-  color: #B2D57C;
+  line-height: 1.875em;
 }
 .contact__arrow {
-  left: 49%;
   transform: rotate(180deg);
-  animation: bouncearrow2 5s infinite;
+  animation: bouncearrow 5s infinite;
   color: #fff;
+}
+.contact__link {
+  text-transform: lowercase !important;
 }
 
 .portfolio {
   background-color: #F0F0F0;
   padding-top: 3.125em;
-  min-height: 112.5em;
+  min-height: 131.25em;
 }
 @media (min-width: 769px) {
   .portfolio {
@@ -674,7 +635,7 @@ body {
   color: #0b0b0b;
   position: absolute !important;
   left: 49%;
-  margin-top: 33.75em;
+  margin-top: 40em;
 }
 @media (min-width: 769px) {
   .portfolio__arrow {
@@ -690,9 +651,13 @@ body {
   width: 14.375em;
   height: 10.625em;
   position: absolute;
-  transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
   box-shadow: 0.8125em 0.75em 0.9375em 0.3125em rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+@media (min-width: 769px) {
+  .portfolio__block {
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
+  }
 }
 .portfolio__block img {
   width: 14.375em;
@@ -715,7 +680,7 @@ body {
 }
 .portfolio #b1 {
   top: 3.75em;
-  right: 5.625em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b1 {
@@ -728,8 +693,8 @@ body {
   }
 }
 .portfolio #b2 {
-  top: 13.75em;
-  right: 5.625em;
+  top: 17.5em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b2 {
@@ -743,8 +708,8 @@ body {
   }
 }
 .portfolio #b3 {
-  top: 23.75em;
-  right: 5.625em;
+  top: 31.25em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b3 {
@@ -758,8 +723,8 @@ body {
   }
 }
 .portfolio #b4 {
-  top: 34.0625em;
-  right: 5.625em;
+  top: 45em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b4 {
@@ -774,8 +739,8 @@ body {
   }
 }
 .portfolio #b5 {
-  top: 44.375em;
-  right: 5.625em;
+  top: 72.5em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b5 {
@@ -790,8 +755,8 @@ body {
   }
 }
 .portfolio #b6 {
-  top: 54.375em;
-  right: 5.625em;
+  top: 58.75em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b6 {
@@ -806,8 +771,8 @@ body {
   }
 }
 .portfolio #b7 {
-  top: 64.375em;
-  right: 5.625em;
+  top: 86.25em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b7 {
@@ -822,8 +787,8 @@ body {
   }
 }
 .portfolio #b8 {
-  top: 74.375em;
-  right: 5.625em;
+  top: 100em;
+  right: 8.75em;
 }
 @media (min-width: 769px) {
   .portfolio #b8 {
@@ -908,6 +873,49 @@ body {
 .about p {
   margin: auto;
   width: 50%;
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+.social__icons {
+  padding: initial;
+}
+.social__icons__linkedin {
+  background-color: #007bb5;
+}
+.social__icons__github {
+  background-color: #0b0b0b;
+}
+.social__icons__twitter {
+  background-color: #55acee;
+}
+.social__icons__facebook {
+  background-color: #3b5998;
+}
+.social__icons__instagram {
+  background-color: #ff4800;
+}
+.social__icons__email {
+  background-color: #B2D57C;
+}
+.social__icons li {
+  border-radius: 0 5px 5px 0;
+  height: 2.1875em;
+  width: 2.5em;
+  list-style-type: none;
+  padding: 0.375em 0 0 0.75em;
+  margin-top: 0.3125em;
+  color: #fff;
+}
+.social__icons li:hover {
+  padding-left: 1.875em;
+  width: 5em;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
