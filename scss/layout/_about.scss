@@ -1,7 +1,6 @@
 
 .about {
-    background-color: $white-smoke;
-  // background-color: $blue;
+  background-color: $white-smoke;
   @extend %box-shadow2;
   padding-top: em(50px);
   @include e(arrow) {
@@ -25,7 +24,6 @@
     @extend %hdln-prim;
   }
   p {
-    // color: $white;
     margin: auto;
     width: 50%;
   }
