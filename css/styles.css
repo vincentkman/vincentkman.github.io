@@ -73,11 +73,7 @@
   filter: blur(15px);
 }
 
-.portfolio {
-  box-shadow: inset 0em 0.6875em 0.5em -0.625em #CCC;
-}
-
-.about, .skills {
+.about, .portfolio, .contact, .skills {
   box-shadow: inset 0em 0.6875em 0.5em -0.625em #CCC, inset 0em -0.6875em 0.5em -0.625em #CCC;
 }
 

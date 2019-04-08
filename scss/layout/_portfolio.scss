@@ -1,6 +1,6 @@
 .portfolio {
   background-color: $white-smoke;
-  @extend %box-shadow1;
+  @extend %box-shadow2;
   padding-top: em(50px);
   min-height: em(2100px);
   @include mq("medium") {

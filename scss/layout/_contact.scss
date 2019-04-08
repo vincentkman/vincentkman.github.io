@@ -1,6 +1,7 @@
 .contact {
   min-height: em(500px);
   padding-top: em(30px);
+  @extend %box-shadow2;
   @include dim($w: 100%, $h: 60vh);
   color: $white;
   background-color: rgba(0,0,0,.8);;
@@ -13,7 +14,6 @@
     line-height: em(30px);
   }
   @include e(arrow) {
-  // left: 49%;
   transform: rotate(180deg);
   animation: bouncearrow 5s infinite;
   color: $white;
