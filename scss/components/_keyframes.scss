@@ -19,3 +19,15 @@
     top: em(0px);
   }
 }
+
+@keyframes bouncearrow2 {
+  0% {
+    top: em(0px);
+  }
+  50% {
+    top: em(5px);
+  }
+  100% {
+    top: em(0px);
+  }
+}

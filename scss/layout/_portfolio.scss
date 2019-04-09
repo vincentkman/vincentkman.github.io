@@ -10,11 +10,13 @@
     }
   }
   @include e(arrow) {
+    left: 46%;
     color: $black;
     @include pos($pos: absolute !important, $left: 49%);
     margin-top: em(640px);
     @include mq("medium") {
       margin-top: em(285px);
+      left: 49%;
       @include mq("large") {
         margin-top: em(255px);
       }
@@ -26,15 +28,12 @@
 
   @include e(block) {
     @include dim($w:em(230px), $h:em(170px));
-
     position: absolute;
-
     box-shadow: em(13px) em(12px) em(15px) em(5px) rgba(0,0,0,.3);
     cursor: pointer;
     @include mq("medium") {
       transform: rotateX(45deg) rotateY(0deg) rotateZ(20deg);
     }
-
 
     img {
       @include dim($w:em(230px), $h:em(170px));
@@ -102,7 +101,7 @@
   }
 
   #b5 {
-    top: em(1160px);
+    top: em(940px);
     right: em(70px);
     @include mq("medium") {
       top: em(320px);
@@ -115,7 +114,7 @@
   }
 
   #b6 {
-    top: em(940px);
+    top: em(1160px);
     right: em(70px);
     @include mq("medium") {
       top: em(450px);
@@ -167,9 +166,9 @@
     overflow-y: auto;
 
     img {
-      width: em(240px);
+      @include dim($w: em(200px), $h: em(200px));
       @include mq("medium") {
-        width: em(400px);
+        @include dim($w: em(400px), $h: em(320px));
       }
     }
     @include e(close-btn) {

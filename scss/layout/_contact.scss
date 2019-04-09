@@ -1,5 +1,5 @@
 .contact {
-  min-height: em(500px);
+  min-height: em(450px);
   padding-top: em(30px);
   @extend %box-shadow2;
   @include dim($w: 100%, $h: 60vh);
@@ -14,9 +14,13 @@
     line-height: em(30px);
   }
   @include e(arrow) {
-  transform: rotate(180deg);
-  animation: bouncearrow 5s infinite;
-  color: $white;
+    left: 3%;
+    transform: rotate(180deg);
+    animation: bouncearrow2 5s infinite !important;
+    color: $white;
+    @include mq("medium") {
+      left: 1%;
+    }
 }
   @include e(link) {
     text-transform: lowercase !important;
