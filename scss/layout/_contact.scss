@@ -4,7 +4,7 @@
   @extend %box-shadow2;
   @include dim($w: 100%, $h: 60vh);
   color: $white;
-  background-color: rgba(0,0,0,.8);;
+  background-color: rgba(0,0,0,.8);
   img {
     margin-bottom: em(30px);
   }
@@ -19,7 +19,7 @@
     animation: bouncearrow2 5s infinite !important;
     color: $white;
     @include mq("medium") {
-      left: 1%;
+      left: em(-2px);
     }
 }
   @include e(link) {

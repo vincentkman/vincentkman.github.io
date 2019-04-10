@@ -30,9 +30,12 @@
       color: $white;
     }
     @include e(arrow) {
-      left: 40%;
+      left: 39%;
       margin-top: em(15px);
       color: $white;
+      @include mq("medium") {
+        left: 38%;
+      }
     }
   }
 }

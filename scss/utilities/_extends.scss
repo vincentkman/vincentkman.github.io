@@ -135,3 +135,10 @@
     @extend %mouseover;
   }
 }
+
+// Horizontal Line
+
+
+.line {
+  border-top: 1px dotted $grey;
+}

@@ -26,17 +26,15 @@
     }
 
     li {
+      @include dim($w: em(40px), $h: em(35px));
       border-radius: 0 $br--default $br--default 0;
-      height: em(35px);
-      width: em(40px);
-      list-style-type: none;
       padding: em(6px) 0 0 em(12px);
       margin-top: em(5px);
       color: $white;
       &:hover {
         padding-left: em(30px);
         width: em(80px);
-        transition: 1s;
+        transition: 1.2s;
       }
     }
   }
