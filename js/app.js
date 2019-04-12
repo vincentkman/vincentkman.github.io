@@ -145,7 +145,7 @@ $.each(data, (index, value) => {
 
   let boxes = `
   <div class="col-md-6 col-lg-4">
-    <div id="${project++}" class="project-card">
+    <div id="${project++}" class="portfolio__project-card project-card">
 			<div class=${data[index].block} id=${data[index].block2}>
 			<img src=${data[index].image} class="portfolio__block__img-description">
 			<h5 class="portfolio__block__img-text text-center">${data[index].title2}</h5>

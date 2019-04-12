@@ -78,6 +78,10 @@
 }
 
 .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   position: relative;
   font-size: 3.125em;
   text-align: center;
@@ -561,14 +565,9 @@ body {
   color: #fff;
 }
 .home__caption__arrow {
-  left: 39%;
+  right: 10%;
   margin-top: 0.9375em;
   color: #fff;
-}
-@media (min-width: 769px) {
-  .home__caption__arrow {
-    left: 38%;
-  }
 }
 
 .navbar {
@@ -605,13 +604,7 @@ body {
   font-size: 4.0625em;
 }
 .skills__arrow {
-  left: 46%;
   color: #0b0b0b;
-}
-@media (min-width: 769px) {
-  .skills__arrow {
-    left: 49%;
-  }
 }
 .contact {
   min-height: 28.125em;
@@ -629,15 +622,9 @@ body {
   line-height: 1.875em;
 }
 .contact__arrow {
-  left: 3%;
   transform: rotate(180deg);
   animation: bouncearrow2 5s infinite !important;
   color: #fff;
-}
-@media (min-width: 769px) {
-  .contact__arrow {
-    left: -0.125em;
-  }
 }
 .contact__link {
   text-transform: lowercase !important;
@@ -658,17 +645,22 @@ body {
     min-height: 56.25em;
   }
 }
+.portfolio__project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 .portfolio__arrow {
-  left: 46%;
+  left: 47.5%;
   color: #0b0b0b;
   position: absolute !important;
-  left: 49%;
   margin-top: 40em;
 }
 @media (min-width: 769px) {
   .portfolio__arrow {
-    margin-top: 17.8125em;
     left: 49%;
+    margin-top: 17.8125em;
   }
 }
 @media (min-width: 769px) and (min-width: 1024px) {
@@ -709,7 +701,6 @@ body {
 }
 .portfolio #b1 {
   top: 3.75em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b1 {
@@ -723,7 +714,6 @@ body {
 }
 .portfolio #b2 {
   top: 17.5em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b2 {
@@ -738,7 +728,6 @@ body {
 }
 .portfolio #b3 {
   top: 31.25em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b3 {
@@ -753,7 +742,6 @@ body {
 }
 .portfolio #b4 {
   top: 45em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b4 {
@@ -769,7 +757,6 @@ body {
 }
 .portfolio #b5 {
   top: 58.75em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b5 {
@@ -785,7 +772,6 @@ body {
 }
 .portfolio #b6 {
   top: 72.5em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b6 {
@@ -801,7 +787,6 @@ body {
 }
 .portfolio #b7 {
   top: 86.25em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b7 {
@@ -817,7 +802,6 @@ body {
 }
 .portfolio #b8 {
   top: 100em;
-  right: 23%;
 }
 @media (min-width: 769px) {
   .portfolio #b8 {
@@ -883,14 +867,8 @@ body {
   padding-top: 3.125em;
 }
 .about__arrow {
-  left: 46%;
   margin-top: 0.625em;
   color: #0b0b0b;
-}
-@media (min-width: 769px) {
-  .about__arrow {
-    left: 49%;
-  }
 }
 .about__carousel img {
   box-shadow: 0.8125em 0.75em 0.9375em 0.3125em rgba(0, 0, 0, 0.3);

@@ -14,12 +14,12 @@
     line-height: em(30px);
   }
   @include e(arrow) {
-    left: 3%;
+    // left: 3%;
     transform: rotate(180deg);
     animation: bouncearrow2 5s infinite !important;
     color: $white;
     @include mq("medium") {
-      left: em(-2px);
+      // left: em(-2px);
     }
 }
   @include e(link) {
