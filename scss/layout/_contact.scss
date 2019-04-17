@@ -5,6 +5,8 @@
   @include dim($w: 100%, $h: 60vh);
   color: $white;
   background-color: rgba(0,0,0,.8);
+  // z-index: -1;
+  // position: relative;
   img {
     margin-bottom: em(30px);
   }
@@ -14,13 +16,13 @@
     line-height: em(30px);
   }
   @include e(arrow) {
-    left: 3%;
+    // left: 3%;
     transform: rotate(180deg);
     animation: bouncearrow2 5s infinite !important;
     color: $white;
-    @include mq("medium") {
-      left: em(0px);
-    }
+    // @include mq("medium") {
+    //   left: em(0px);
+    // }
 }
   @include e(link) {
     text-transform: lowercase !important;

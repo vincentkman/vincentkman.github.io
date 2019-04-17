@@ -127,9 +127,8 @@
 // Arrow
 
 %arrow {
-  // @include flexbox($just: center, $align: center);
-  // margin: 0 auto;
-  left: 49%;;
+  @include flexbox($just: center, $align: center);
+  margin: 0 auto;
   position: relative;
   font-size: em(50px);
   text-align: center;
@@ -140,7 +139,6 @@
 }
 
 // Horizontal Line
-
 
 .line {
   border-top: 1px dotted $grey;

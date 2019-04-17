@@ -15,9 +15,9 @@
   @include e(arrow) {
     // left: 46%;
     color: $black;
-    @include mq("medium") {
-      // left: 49%;
-    }
+    // @include mq("medium") {
+    //   left: 49%;
+    // }
   }
   h1 {
     @extend %hdln-prim;

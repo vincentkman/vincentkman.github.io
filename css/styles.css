@@ -78,7 +78,10 @@
 }
 
 .arrow {
-  left: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   position: relative;
   font-size: 3.125em;
   text-align: center;
@@ -562,7 +565,7 @@ body {
   color: #fff;
 }
 .home__caption__arrow {
-  left: 40% !important;
+  right: 10%;
   margin-top: 0.9375em;
   color: #fff;
 }
@@ -619,15 +622,9 @@ body {
   line-height: 1.875em;
 }
 .contact__arrow {
-  left: 3%;
   transform: rotate(180deg);
   animation: bouncearrow2 5s infinite !important;
   color: #fff;
-}
-@media (min-width: 769px) {
-  .contact__arrow {
-    left: 0em;
-  }
 }
 .contact__link {
   text-transform: lowercase !important;
