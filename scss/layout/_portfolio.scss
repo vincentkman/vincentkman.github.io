@@ -45,6 +45,7 @@
       &:hover {
         transform: translate(-3%, -3%);
         opacity: .3;
+
       }
     }
     @include e(img-description) {

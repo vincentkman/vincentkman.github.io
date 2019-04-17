@@ -127,8 +127,9 @@
 // Arrow
 
 %arrow {
-  @include flexbox($just: center, $align: center);
-  margin: 0 auto;
+  // @include flexbox($just: center, $align: center);
+  // margin: 0 auto;
+  left: 49%;;
   position: relative;
   font-size: em(50px);
   text-align: center;

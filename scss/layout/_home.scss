@@ -30,7 +30,7 @@
       color: $white;
     }
     @include e(arrow) {
-      right: 10%;
+      left: 40% !important;
       margin-top: em(15px);
       color: $white;
     }
