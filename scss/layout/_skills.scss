@@ -1,5 +1,5 @@
 .skills {
-    background-color: $white-smoke;
+  background-color: $white-smoke;
   @extend %box-shadow2;
   padding-top: em(50px);
   @include e(icon) {
@@ -13,11 +13,11 @@
     }
   }
   @include e(arrow) {
-    // left: 46%;
+    left: 46.5%;
     color: $black;
-    // @include mq("medium") {
-    //   left: 49%;
-    // }
+    @include mq("medium") {
+      left: 47.5%;
+    }
   }
   h1 {
     @extend %hdln-prim;

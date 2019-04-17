@@ -10,16 +10,13 @@
     }
   }
   @include e(project-card){
-    @include flexbox($just: center, $align: center);
-    margin: 0 auto;
+    @extend %center;
   }
   @include e(arrow) {
-    left: 47.5%;
     color: $black;
-    @include pos($pos: absolute !important);
+    @include pos($pos: absolute !important, $top: 300%, $left: 49%);
     margin-top: em(640px);
     @include mq("medium") {
-      left: 49%;
       margin-top: em(285px);
       @include mq("large") {
         margin-top: em(255px);
@@ -28,6 +25,15 @@
   }
   h1 {
     @extend %hdln-prim;
+  }
+
+  @include e(container) {
+      @extend %center;
+      -webkit-perspective: em(900000px);
+      perspective: em(900000px);
+      @include mq("medium") {
+          margin-left: em(400px);
+      }
   }
 
   @include e(block) {

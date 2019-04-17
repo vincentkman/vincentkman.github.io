@@ -9,6 +9,13 @@
   letter-spacing: 1px;
 }
 
+.portfolio__container, .portfolio__project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .portfolio__modal__close-btn:hover, .arrow:hover {
   opacity: 0.8;
   transition: 0.5s;
@@ -78,10 +85,6 @@
 }
 
 .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   position: relative;
   font-size: 3.125em;
   text-align: center;
@@ -565,7 +568,7 @@ body {
   color: #fff;
 }
 .home__caption__arrow {
-  right: 10%;
+  left: 38% !important;
   margin-top: 0.9375em;
   color: #fff;
 }
@@ -604,7 +607,13 @@ body {
   font-size: 4.0625em;
 }
 .skills__arrow {
+  left: 46.5%;
   color: #0b0b0b;
+}
+@media (min-width: 769px) {
+  .skills__arrow {
+    left: 47.5%;
+  }
 }
 .contact {
   min-height: 28.125em;
@@ -622,6 +631,7 @@ body {
   line-height: 1.875em;
 }
 .contact__arrow {
+  left: 0;
   transform: rotate(180deg);
   animation: bouncearrow2 5s infinite !important;
   color: #fff;
@@ -645,27 +655,30 @@ body {
     min-height: 56.25em;
   }
 }
-.portfolio__project-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
 .portfolio__arrow {
-  left: 47.5%;
   color: #0b0b0b;
   position: absolute !important;
+  top: 300%;
+  left: 49%;
   margin-top: 40em;
 }
 @media (min-width: 769px) {
   .portfolio__arrow {
-    left: 49%;
     margin-top: 17.8125em;
   }
 }
 @media (min-width: 769px) and (min-width: 1024px) {
   .portfolio__arrow {
     margin-top: 15.9375em;
+  }
+}
+.portfolio__container {
+  -webkit-perspective: 56250em;
+  perspective: 56250em;
+}
+@media (min-width: 769px) {
+  .portfolio__container {
+    margin-left: 25em;
   }
 }
 .portfolio__block {
@@ -867,6 +880,7 @@ body {
   padding-top: 3.125em;
 }
 .about__arrow {
+  left: 47.5%;
   margin-top: 0.625em;
   color: #0b0b0b;
 }
