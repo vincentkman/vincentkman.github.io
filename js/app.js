@@ -117,12 +117,14 @@ const data = [
 	  image: 'images/project7.png',
 		title: 'FreeCodeCamp',
 	  title2: 'Tribute Page',
-	  text: "For this project challenge, I made a tribute page on Albert Einstein using HTML and SASS. After finishing all of my projects on Treehouse, I decided to keep coding and went on to Free Code Camp to improve my skills further. After completing various projects, I became more confident and efficient. I used an image of Albert Einstein as the landing page and included a timeline of his history of achievements.",
+	  text: "For this project challenge, I made a tribute page on Albert Einstein using all skills including HTML, SASS, JS and Bootstrap. After finishing all of my projects on Treehouse, I decided to keep coding and went on to Free Code Camp to improve my skills further. After completing various projects, I became more confident and efficient. I used an image of Albert Einstein as the landing page and included a timeline of his history of achievements.",
 	  link: "https://github.com/vincentkman/FreeCodeCamp-Project-1-Tribute-Page",
 	  link2: "https://vincentkman.github.io/FreeCodeCamp-Project-1-Tribute-Page/",
 	  tool1: "fab fa-html5 fa-stack-2x",
 	  tool2: "fab fa-css3-alt fa-stack-2x",
 	  tool3: "fab fa-sass fa-stack-2x",
+		tool4: "fab fa-js-square fa-stack-2x",
+		tool5: "fas fa-bold fa-stack-2x",
 	  block: "portfolio__block",
 	  block2: "b7"
 	},
@@ -130,14 +132,46 @@ const data = [
 	  image: 'images/project8.png',
 		title: 'FreeCodeCamp',
 	  title2: 'Survey Form',
-	  text: "For this challenge, I created a survey form using HTML and SASS. This project is very similar to Project 1, so therefore, I have good experience in this area. This time I used SASS which made the process faster and more efficient.  I used various HTML elements, for example, text input field, select element of a drop-down list, checkbox and text-area input field. This project was an excellent opportunity to enhance my area on forms and feeling even more confident in my skills.",
+	  text: "For this challenge, I created a survey form using HTML, SASS, JS and Bootstrap. This project is very similar to Project 1, so therefore, I have good experience in this area. This time I used SASS which made the process faster and more efficient.  I used various HTML elements, for example, text input field, select element of a drop-down list, checkbox and text-area input field. This project was an excellent opportunity to enhance my area on forms and feeling even more confident in my skills.",
 	  link: "https://github.com/vincentkman/FreeCodeCamp-Project-2-Survey-Form",
 	  link2: "https://vincentkman.github.io/FreeCodeCamp-Project-2-Survey-Form/",
 	  tool1: "fab fa-html5 fa-stack-2x",
 	  tool2: "fab fa-css3-alt fa-stack-2x",
 	  tool3: "fab fa-sass fa-stack-2x",
+		tool4: "fab fa-js-square fa-stack-2x",
+		tool5: "fas fa-bold fa-stack-2x",
 	  block: "portfolio__block",
 	  block2: "b8"
+	},
+	{
+		image: 'images/project9.png',
+		title: 'FreeCodeCamp',
+		title2: 'Landing Page',
+		text: "For this challenge, I created a webpage using HTML, SASS, JS and Bootstrap.",
+		link: "https://github.com/vincentkman/FreeCodeCamp-Project-3-Landing-Page",
+		link2: "https://vincentkman.github.io/FreeCodeCamp-Project-3-Landing-Page/",
+		tool1: "fab fa-html5 fa-stack-2x",
+		tool2: "fab fa-css3-alt fa-stack-2x",
+		tool3: "fab fa-sass fa-stack-2x",
+		tool4: "fab fa-js-square fa-stack-2x",
+		tool5: "fas fa-bold fa-stack-2x",
+		block: "portfolio__block",
+		block2: "b9"
+	},
+	{
+		image: 'images/project10.png',
+		title: 'FreeCodeCamp',
+		title2: 'Technical Documentation',
+		text: "For this challenge, I created a documentation using HTML, SASS, JS and Bootstrap.",
+		link: "https://github.com/vincentkman/FreeCodeCamp-Project-4-Build-a-Technical-Documentation-Page",
+		link2: "https://vincentkman.github.io/FreeCodeCamp-Project-4-Build-a-Technical-Documentation-Page/",
+		tool1: "fab fa-html5 fa-stack-2x",
+		tool2: "fab fa-css3-alt fa-stack-2x",
+		tool3: "fab fa-sass fa-stack-2x",
+		tool4: "fab fa-js-square fa-stack-2x",
+		tool5: "fas fa-bold fa-stack-2x",
+		block: "portfolio__block",
+		block2: "b10"
 	}
 ];
 
@@ -149,7 +183,7 @@ $.each(data, (index, value) => {
 		<div class="portfolio__container">
 			<div class=${data[index].block} id=${data[index].block2}>
 			<img src=${data[index].image} class="portfolio__block__img-description">
-			<h5 class="portfolio__block__img-text text-center">${data[index].title2}</h5>
+			<button class="btn btn-dark"><p>${data[index].title2}</p></button>
 			</div>
 			</div>
 		</div>
@@ -195,6 +229,9 @@ $(".project-card").on('click', function() {
 			 </span>
 			 <span class="js fa-stack fa-2x">
 			 <i class="${data[popupModal].tool4}"></i>
+			 </span>
+			 <span class="boot fa-stack fa-2x">
+			 <i class="${data[popupModal].tool5}"></i>
 			 </span>
 			 </div>
 			 <div>

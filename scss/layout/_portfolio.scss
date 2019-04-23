@@ -2,11 +2,11 @@
   background-color: $white-smoke;
   @extend %box-shadow2;
   padding-top: em(50px);
-  min-height: em(2100px);
+  min-height: em(2800px);
   @include mq("medium") {
-    min-height: em(1000px);
+    min-height: em(1700px);
     @include mq("large") {
-      min-height: em(900px);
+      min-height: em(1700px);
     }
   }
   @include e(project-card){
@@ -15,16 +15,23 @@
   @include e(arrow) {
     color: $black;
     @include pos($pos: absolute !important, $top: 300%, $left: 49%);
-    margin-top: em(640px);
+    margin-top: em(860px);
     @include mq("medium") {
-      margin-top: em(285px);
-      @include mq("large") {
-        margin-top: em(255px);
-      }
+      margin-top: em(505px);
+      // @include mq("large") {
+      //   margin-top: em(505px);
+      // }
     }
   }
   h1 {
     @extend %hdln-prim;
+  }
+  @include e(fcc-title) {
+    @include pos($pos: absolute, $top: 57.9%);
+    @include mq("medium") {
+      top: 52%;
+      left: 25%;
+    }
   }
 
   @include e(container) {
@@ -33,6 +40,9 @@
       perspective: em(900000px);
       @include mq("medium") {
           margin-left: em(400px);
+          @include mq("large") {
+            margin-left: em(800px);
+          }
       }
   }
 
@@ -56,8 +66,12 @@
     @include e(img-description) {
       @include pos($pos: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0);
     }
-    @include e(img-text) {
+    button {
+      @extend %center;
       margin-top: em(50px);
+      p {
+        margin-top: em(15px);
+      }
     }
   }
 
@@ -66,9 +80,9 @@
     top: em(60px);
     @include mq("medium") {
       right: em(-160px);
-      @include mq("large") {
-        right: em(-500px);
-      }
+      // @include mq("large") {
+      //   right: em(-500px);
+      // }
     }
   }
 
@@ -77,9 +91,9 @@
     @include mq("medium") {
       top: em(190px);
       right: em(-95px);
-      @include mq("large") {
-        right: em(-435px);
-      }
+      // @include mq("large") {
+      //   right: em(-435px);
+      // }
     }
   }
 
@@ -88,9 +102,9 @@
     @include mq("medium") {
       top: em(320px);
       right: em(-30px);
-      @include mq("large") {
-        right: em(-370px);
-      }
+      // @include mq("large") {
+      //   right: em(-370px);
+      // }
     }
   }
 
@@ -99,10 +113,10 @@
     @include mq("medium") {
       top: em(190px);
       right: em(-380px);
-      @include mq("large") {
-        top: em(180px);
-        right: em(-720px);
-      }
+      // @include mq("large") {
+      //   top: em(180px);
+      //   right: em(-720px);
+      // }
     }
   }
 
@@ -111,10 +125,10 @@
     @include mq("medium") {
       top: em(320px);
       right: em(-315px);
-      @include mq("large") {
-        top: em(310px);
-        right: em(-655px);
-      }
+      // @include mq("large") {
+      //   top: em(310px);
+      //   right: em(-655px);
+      // }
     }
   }
 
@@ -123,34 +137,58 @@
     @include mq("medium") {
       top: em(450px);
       right: em(-250px);
-      @include mq("large") {
-        top: em(440px);
-        right: em(-590px);
-      }
+      // @include mq("large") {
+      //   top: em(440px);
+      //   right: em(-590px);
+      // }
     }
   }
 
   #b7 {
-    top: em(1380px);
+    top: em(1600px);
     @include mq("medium") {
-      top: em(450px);
-      right: em(35px);
-      @include mq("large") {
-        top: em(60px);
-        right: em(-210px);
+      top: em(880px);
+      right: em(-185px);
+    //   @include mq("large") {
+    //     top: em(60px);
+    //     right: em(-210px);
       }
-    }
+    // }
   }
 
   #b8 {
-    top: em(1600px);
+    top: em(1820px);
     @include mq("medium") {
-      top: em(590px);
-      right: em(105px);
-      @include mq("large") {
-        top: em(190px);
-        right: em(-140px);
-      }
+      top: em(1010px);
+      right: em(-120px);
+    //   @include mq("large") {
+    //     top: em(190px);
+    //     right: em(-140px);
+    //   }
+    }
+  }
+
+  #b9 {
+    top: em(2040px);
+    @include mq("medium") {
+      top: em(1145px);
+      right: em(-50px);
+    //   @include mq("large") {
+    //     top: em(190px);
+    //     right: em(-140px);
+    //   }
+    }
+  }
+
+  #b10 {
+    top: em(2260px);
+    @include mq("medium") {
+      top: em(1010px);
+      right: em(-400px);
+    //   @include mq("large") {
+    //     top: em(190px);
+    //     right: em(-140px);
+    //   }
     }
   }
 

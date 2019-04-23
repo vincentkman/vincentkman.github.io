@@ -9,7 +9,7 @@
   letter-spacing: 1px;
 }
 
-.portfolio__container, .portfolio__project-card {
+.portfolio__block button, .portfolio__container, .portfolio__project-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,16 +643,16 @@ body {
 .portfolio {
   background-color: #F0F0F0;
   padding-top: 3.125em;
-  min-height: 131.25em;
+  min-height: 175em;
 }
 @media (min-width: 769px) {
   .portfolio {
-    min-height: 62.5em;
+    min-height: 106.25em;
   }
 }
 @media (min-width: 769px) and (min-width: 1024px) {
   .portfolio {
-    min-height: 56.25em;
+    min-height: 106.25em;
   }
 }
 .portfolio__arrow {
@@ -660,16 +660,21 @@ body {
   position: absolute !important;
   top: 300%;
   left: 49%;
-  margin-top: 40em;
+  margin-top: 53.75em;
 }
 @media (min-width: 769px) {
   .portfolio__arrow {
-    margin-top: 17.8125em;
+    margin-top: 31.5625em;
   }
 }
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio__arrow {
-    margin-top: 15.9375em;
+.portfolio__fcc-title {
+  position: absolute;
+  top: 57.9%;
+}
+@media (min-width: 769px) {
+  .portfolio__fcc-title {
+    top: 52%;
+    left: 25%;
   }
 }
 .portfolio__container {
@@ -679,6 +684,11 @@ body {
 @media (min-width: 769px) {
   .portfolio__container {
     margin-left: 25em;
+  }
+}
+@media (min-width: 769px) and (min-width: 1024px) {
+  .portfolio__container {
+    margin-left: 50em;
   }
 }
 .portfolio__block {
@@ -709,8 +719,11 @@ body {
   bottom: 0;
   left: 0;
 }
-.portfolio__block__img-text {
+.portfolio__block button {
   margin-top: 3.125em;
+}
+.portfolio__block button p {
+  margin-top: 0.9375em;
 }
 .portfolio #b1 {
   top: 3.75em;
@@ -718,11 +731,6 @@ body {
 @media (min-width: 769px) {
   .portfolio #b1 {
     right: -10em;
-  }
-}
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b1 {
-    right: -31.25em;
   }
 }
 .portfolio #b2 {
@@ -734,11 +742,6 @@ body {
     right: -5.9375em;
   }
 }
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b2 {
-    right: -27.1875em;
-  }
-}
 .portfolio #b3 {
   top: 31.25em;
 }
@@ -746,11 +749,6 @@ body {
   .portfolio #b3 {
     top: 20em;
     right: -1.875em;
-  }
-}
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b3 {
-    right: -23.125em;
   }
 }
 .portfolio #b4 {
@@ -762,12 +760,6 @@ body {
     right: -23.75em;
   }
 }
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b4 {
-    top: 11.25em;
-    right: -45em;
-  }
-}
 .portfolio #b5 {
   top: 58.75em;
 }
@@ -775,12 +767,6 @@ body {
   .portfolio #b5 {
     top: 20em;
     right: -19.6875em;
-  }
-}
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b5 {
-    top: 19.375em;
-    right: -40.9375em;
   }
 }
 .portfolio #b6 {
@@ -792,40 +778,40 @@ body {
     right: -15.625em;
   }
 }
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b6 {
-    top: 27.5em;
-    right: -36.875em;
-  }
-}
 .portfolio #b7 {
-  top: 86.25em;
-}
-@media (min-width: 769px) {
-  .portfolio #b7 {
-    top: 28.125em;
-    right: 2.1875em;
-  }
-}
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio #b7 {
-    top: 3.75em;
-    right: -13.125em;
-  }
-}
-.portfolio #b8 {
   top: 100em;
 }
 @media (min-width: 769px) {
-  .portfolio #b8 {
-    top: 36.875em;
-    right: 6.5625em;
+  .portfolio #b7 {
+    top: 55em;
+    right: -11.5625em;
   }
 }
-@media (min-width: 769px) and (min-width: 1024px) {
+.portfolio #b8 {
+  top: 113.75em;
+}
+@media (min-width: 769px) {
   .portfolio #b8 {
-    top: 11.875em;
-    right: -8.75em;
+    top: 63.125em;
+    right: -7.5em;
+  }
+}
+.portfolio #b9 {
+  top: 127.5em;
+}
+@media (min-width: 769px) {
+  .portfolio #b9 {
+    top: 71.5625em;
+    right: -3.125em;
+  }
+}
+.portfolio #b10 {
+  top: 141.25em;
+}
+@media (min-width: 769px) {
+  .portfolio #b10 {
+    top: 63.125em;
+    right: -25em;
   }
 }
 .portfolio__modal {
