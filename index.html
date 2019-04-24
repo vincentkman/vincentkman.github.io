@@ -10,73 +10,69 @@
 </head>
 <body>
 
+     <!-- Navigation -->
+     <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+       <div class="container-fluid">
+         <a class= "navbar__brand navbar-brand" href="#"><img src="images/logo1.png" height="90"></a>
+         <button class="navbar__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+            <span class="navbar__toggler__toggler-icon navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar__collapse navbar-collapse collapse" id="nav">
+              <ul class="navbar__navbar-nav navbar-nav ml-auto">
+                <li class="navbar__navbar-nav__nav-item nav-item active">
+                  <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#home">Home</a>
+                </li>
+                <li class="navbar__navbar-nav__nav-item nav-item">
+                  <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#about">About</a>
+                </li>
+                <li class="navbar__navbar-nav__nav-item nav-item">
+                  <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="navbar__navbar-nav__nav-item nav-item">
+                  <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="navbar__navbar-nav__nav-item nav-item">
+                  <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+       </div>
+     </nav> <!--End of Navigation-->
 
-  <div class="home">
-
- <!-- Navigation -->
-
- <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
-   <div class="container-fluid">
-     <a class= "navbar__brand navbar-brand" href="#"><img src="images/logo1.png" height="90"></a>
-     <button class="navbar__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-        <span class="navbar__toggler__toggler-icon navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar__collapse navbar-collapse collapse" id="nav">
-          <ul class="navbar__navbar-nav navbar-nav ml-auto">
-            <li class="navbar__navbar-nav__nav-item nav-item active">
-              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#home">Home</a>
-            </li>
-            <li class="navbar__navbar-nav__nav-item nav-item">
-              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#about">About</a>
-            </li>
-            <li class="navbar__navbar-nav__nav-item nav-item">
-              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="navbar__navbar-nav__nav-item nav-item">
-              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="navbar__navbar-nav__nav-item nav-item">
-              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-   </div>
- </nav>
-
-    <!-- Landing Page -->
-
-    <div id="home">
-      <div class="home__landing">
-        <div class="home__wrap">
-          <div id="home-background" class="home__inner">
+      <!-- Landing Page -->
+      <div id="home" class="home">
+        <div class="home__landing">
+          <div class="home__wrap">
+            <div id="home-background" class="home__inner">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="home__caption caption">
-      <h1 class="home__caption__title" data-text="Hello, I'm Vincent K Man">Hello, I'm Vincent K Man</h1>
-      <p>Front End Developer</p>
-      <div>
-        <a href="#contact"><button class="btn btn-outline-light btn-lg">Get in Touch</button></a>
+      <div class="home__caption caption">
+        <h1 class="home__caption__title" data-text="Hello, I'm Vincent K Man">Hello, I'm Vincent K Man</h1>
+        <p>Front End Developer</p>
+        <div>
+          <a href="#contact"><button class="btn btn-outline-light btn-lg">Get in Touch</button></a>
+        </div>
+        <div>
+        <a href="#about"><i class="home__caption__arrow arrow fas fa-angle-double-down"></i></a>
+        </div>
       </div>
-      <div>
-      <a href="#about"><i class="home__caption__arrow arrow fas fa-angle-double-down"></i></a>
-      </div>
-    </div>
-  </div>
+    </div> <!--End of Landing Page-->
 
-  <div class="social">
-    <ul class="social__icons">
-      <a href="https://www.linkedin.com/in/vincent-kingsan-man-611257173/" target="_blank"><li class="social__icons__linkedin linkedin"><i class="linkedin fab fa-linkedin-in"></i></li></a>
-      <a href="https://github.com/vincentkman" target="_blank"><li class="social__icons__github"><i class="fab fa-github"></i></li></a>
-      <a href="https://twitter.com/VincentMan17" target="_blank"><li class="social__icons__twitter"><i class="fab fa-twitter"></i></li></a>
-      <a href="#" target="_blank"><li class="social__icons__facebook"><i class="fab fa-facebook"></i></li></a>
-      <a href="https://www.instagram.com/vinny_man_27/" target="_blank"><li class="social__icons__instagram"><i class="fab fa-instagram"></i></li></a>
-      <a href="mailto:vincentkman@yahoo.com" target="_blank"><li class="social__icons__email"><i class="far fa-envelope-open"></i></li></a>
-    </ul>
-  </div>
+    <!--Social-->
+    <div class="social">
+      <ul class="social__icons">
+        <a href="https://www.linkedin.com/in/vincent-kingsan-man-611257173/" target="_blank"><li class="social__icons__linkedin linkedin"><i class="linkedin fab fa-linkedin-in"></i></li></a>
+        <a href="https://github.com/vincentkman" target="_blank"><li class="social__icons__github"><i class="fab fa-github"></i></li></a>
+        <a href="https://twitter.com/VincentMan17" target="_blank"><li class="social__icons__twitter"><i class="fab fa-twitter"></i></li></a>
+        <a href="#" target="_blank"><li class="social__icons__facebook"><i class="fab fa-facebook"></i></li></a>
+        <a href="https://www.instagram.com/vinny_man_27/" target="_blank"><li class="social__icons__instagram"><i class="fab fa-instagram"></i></li></a>
+        <a href="mailto:vincentkman@yahoo.com" target="_blank"><li class="social__icons__email"><i class="far fa-envelope-open"></i></li></a>
+      </ul>
+    </div><!--End of Social-->
 
-     <!-- About Section-->
+     <!-- About-->
     <div id="about" class="about container-fluid padding">
       <div class="row text-center">
         <div>
@@ -105,92 +101,91 @@
         I started learning HTML5, CSS3, and JavaScript using the free resources from Free Code Camp, Coursera. When I finally became serious in this field, I immediately signed up for Treehouse Front End Development Techdegree.<br><br>
         Learning from the online resources significantly boosted my coding skills and gave me a good foundation for building first-class websites as a Front-End Developer. When I am not coding or trying to position objects correctly, I usually cook, go to the gym or out photographing.
         </p>
-          </div>
-        </div>
-        <div>
-        <a href="#skills"><i class="about__arrow arrow fas fa-angle-double-down"></i></a>
-        </div>
-      </div>
-
-    </div> <!--End About Section-->
-
-    <div id="skills" class="skills container-fluid padding">
-        <h1 class="text-center display-4">Skills</h1>
-      <div class="row text-center padding">
-
-        <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
-          <i class="html fab fa-html5 skills__icon--size"></i>
-          <span class="html__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">HTML</span>
-        </div>
-        <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
-          <i class="css fab fa-css3-alt skills__icon--size"></i>
-          <span class="css__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">CSS</span>
-        </div>
-        <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
-          <i class="sass fab fa-sass skills__icon--size"></i>
-        </div>
-        <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
-          <i class="boot fas fa-bold skills__icon--size"></i>
-        </div>
-        <div class="skills__icon col-xs-12 col-sm-12 col-md-2">
-          <i class="js fab fa-js-square skills__icon--size"></i>
-        </div>
-        <div class="skills__icon col-sm-12 col-md-2">
-          <i class="python fab fa-python skills__icon--size"></i>
-        </div>
-      </div>
-      <div>
-      <a href="#portfolio"><i class="skills__arrow arrow fas fa-angle-double-down"></i></a>
       </div>
     </div>
-
-    <!-- Portfolio -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div id="portfolio" class="portfolio container-fluid">
-              <div>
-                <a href="#contact"><i class="portfolio__arrow arrow fas fa-angle-double-down"></i></a>
-              </div>
-              <div class="portfolio__treehouse-title">
-                <h1 class="display-4 text-center">TreeHouse Portfolio</h1>
-                <p class="text-center">Click on the project image to see more!</p>
-              </div>
-              <div class="portfolio__fcc-title">
-                <h1 class="display-4 text-center">FreeCodeCamp Portfolio</h1>
-                <p class="text-center">Click on the project image to see more!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="modal" class="portfolio__modal"></div>
-          <div id="overlay" class="portfolio__overlay"></div>
-        </div>
-      </div>
+    <div>
+      <a href="#skills"><i class="about__arrow arrow fas fa-angle-double-down"></i></a>
     </div>
   </div>
+</div> <!--End of About-->
 
-<!-- contact -->
+  <!--Skills-->
+  <div id="skills" class="skills container-fluid padding">
+    <h1 class="text-center display-4">Skills</h1>
+    <div class="row text-center padding">
+      <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
+        <i class="html fab fa-html5 skills__icon--size"></i>
+        <span class="html__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">HTML</span>
+      </div>
+      <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
+        <i class="css fab fa-css3-alt skills__icon--size"></i>
+        <span class="css__text-color fa-layers-text fa-inverse" data-fa-transform="up-40">CSS</span>
+      </div>
+      <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
+        <i class="sass fab fa-sass skills__icon--size"></i>
+      </div>
+      <div class="skills__icon col-xs-12 col-sm-6 col-md-2">
+        <i class="boot fas fa-bold skills__icon--size"></i>
+      </div>
+      <div class="skills__icon col-xs-12 col-sm-12 col-md-2">
+        <i class="js fab fa-js-square skills__icon--size"></i>
+      </div>
+      <div class="skills__icon col-sm-12 col-md-2">
+        <i class="python fab fa-python skills__icon--size"></i>
+      </div>
+    </div>
+    <div>
+      <a href="#portfolio"><i class="skills__arrow arrow fas fa-angle-double-down"></i></a>
+    </div>
+  </div><!--End of Skills-->
 
-    <footer>
-      <div id="contact" class="contact">
-        <div class="container-fluid">
-          <div class="row text-center">
-            <div class="col-md-12">
-              <img src="images/logo1.png" height="90">
-              <p><span class="fas fa-phone"></span> 07375270289</p>
-              <p><span class="fas fa-location-arrow"></span> London, UK</p>
-              <p><a class="contact__link"><span class="far fa-envelope-open"></span> vincentkman@yahoo.com</p>
-              <p class="contact__copyright text-center">Copyright &copy; 2019 Vincent K Man</p>
-              <div>
-                <a href="#home"><i class="contact__arrow arrow fas fa-angle-double-down"></i></a>
-              </div>
+  <!-- Portfolio -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div id="portfolio" class="portfolio container-fluid">
+            <h1 class="text-center display-4">Portfolio</h1>
+            <div>
+              <a href="#contact"><i class="portfolio__arrow arrow fas fa-angle-double-down"></i></a>
+            </div>
+            <div class="portfolio__treehouse-title">
+              <h3 class="display-4 text-center headline--secondary">Treehouse</h3>
+              <p class="text-center">Click on the project image to see more!</p>
+            </div>
+            <div class="portfolio__fcc-title">
+              <h3 class="display-4 text-center headline--secondary">FreeCodeCamp</h3>
+              <p class="text-center">Click on the project image to see more!</p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div id="modal" class="portfolio__modal"></div>
+      <div id="overlay" class="portfolio__overlay"></div>
+    </div>
+  </div>
+</div>
+</div> <!--End of Portfolio-->
+
+  <!-- Contact -->
+  <footer>
+    <div id="contact" class="contact">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img src="images/logo1.png" height="90">
+            <p><span class="fas fa-phone"></span> 07375270289</p>
+            <p><span class="fas fa-location-arrow"></span> London, UK</p>
+            <p><a class="contact__link"><span class="far fa-envelope-open"></span> vincentkman@yahoo.com</p>
+            <p class="contact__copyright text-center">Copyright &copy; 2019 Vincent K Man</p>
+            <div>
+              <a href="#home"><i class="contact__arrow arrow fas fa-angle-double-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> <!--End of Contact-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

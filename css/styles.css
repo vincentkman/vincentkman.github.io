@@ -643,21 +643,16 @@ body {
 .portfolio {
   background-color: #F0F0F0;
   padding-top: 3.125em;
-  min-height: 175em;
+  min-height: 184.375em;
 }
 @media (min-width: 769px) {
   .portfolio {
-    min-height: 106.25em;
-  }
-}
-@media (min-width: 769px) and (min-width: 1024px) {
-  .portfolio {
-    min-height: 106.25em;
+    min-height: 113.75em;
   }
 }
 .portfolio__arrow {
   color: #0b0b0b;
-  position: absolute !important;
+  position: relative !important;
   top: 300%;
   left: 49%;
   margin-top: 53.75em;
@@ -667,14 +662,23 @@ body {
     margin-top: 31.5625em;
   }
 }
+.portfolio__treehouse-title {
+  margin-top: -168.75em;
+  margin-bottom: -13.75em;
+}
+@media (min-width: 769px) {
+  .portfolio__treehouse-title {
+    margin: -100em 0 -13.75em 0;
+  }
+}
 .portfolio__fcc-title {
-  position: absolute;
-  top: 57.9%;
+  margin: 3.125em 0 5em 0;
+  position: relative;
+  top: 54.5%;
 }
 @media (min-width: 769px) {
   .portfolio__fcc-title {
-    top: 52%;
-    left: 25%;
+    top: 49%;
   }
 }
 .portfolio__container {
@@ -779,38 +783,38 @@ body {
   }
 }
 .portfolio #b7 {
-  top: 100em;
+  top: 96.875em;
 }
 @media (min-width: 769px) {
   .portfolio #b7 {
-    top: 55em;
+    top: 53.125em;
     right: -11.5625em;
   }
 }
 .portfolio #b8 {
-  top: 113.75em;
+  top: 110.625em;
 }
 @media (min-width: 769px) {
   .portfolio #b8 {
-    top: 63.125em;
+    top: 61.25em;
     right: -7.5em;
   }
 }
 .portfolio #b9 {
-  top: 127.5em;
+  top: 124.375em;
 }
 @media (min-width: 769px) {
   .portfolio #b9 {
-    top: 71.5625em;
-    right: -3.125em;
+    top: 69.375em;
+    right: -3.4375em;
   }
 }
 .portfolio #b10 {
-  top: 141.25em;
+  top: 138.125em;
 }
 @media (min-width: 769px) {
   .portfolio #b10 {
-    top: 63.125em;
+    top: 61.25em;
     right: -25em;
   }
 }

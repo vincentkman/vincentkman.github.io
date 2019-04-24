@@ -2,48 +2,49 @@
   background-color: $white-smoke;
   @extend %box-shadow2;
   padding-top: em(50px);
-  min-height: em(2800px);
+  min-height: em(2950px);
   @include mq("medium") {
-    min-height: em(1700px);
-    @include mq("large") {
-      min-height: em(1700px);
-    }
+    min-height: em(1820px);
+  }
+  h1 {
+    @extend %hdln-prim;
   }
   @include e(project-card){
     @extend %center;
   }
   @include e(arrow) {
     color: $black;
-    @include pos($pos: absolute !important, $top: 300%, $left: 49%);
+    @include pos($pos: relative !important, $top: 300%, $left: 49%);
     margin-top: em(860px);
     @include mq("medium") {
       margin-top: em(505px);
-      // @include mq("large") {
-      //   margin-top: em(505px);
-      // }
     }
   }
-  h1 {
-    @extend %hdln-prim;
+  @include e(treehouse-title) {
+    margin-top: em(-2700px);
+    margin-bottom: em(-220px);
+    @include mq("medium") {
+      margin: em(-1600px) 0 em(-220px) 0;
+    }
   }
   @include e(fcc-title) {
-    @include pos($pos: absolute, $top: 57.9%);
+    margin: em(50px) 0 em(80px) 0;
+    @include pos($pos: relative, $top: 54.5%);
     @include mq("medium") {
-      top: 52%;
-      left: 25%;
+      top: 49%;
     }
   }
 
   @include e(container) {
-      @extend %center;
-      -webkit-perspective: em(900000px);
-      perspective: em(900000px);
-      @include mq("medium") {
-          margin-left: em(400px);
-          @include mq("large") {
-            margin-left: em(800px);
-          }
+    @extend %center;
+    -webkit-perspective: em(900000px);
+    perspective: em(900000px);
+    @include mq("medium") {
+      margin-left: em(400px);
+      @include mq("large") {
+        margin-left: em(800px);
       }
+    }
   }
 
   @include e(block) {
@@ -80,9 +81,6 @@
     top: em(60px);
     @include mq("medium") {
       right: em(-160px);
-      // @include mq("large") {
-      //   right: em(-500px);
-      // }
     }
   }
 
@@ -91,9 +89,6 @@
     @include mq("medium") {
       top: em(190px);
       right: em(-95px);
-      // @include mq("large") {
-      //   right: em(-435px);
-      // }
     }
   }
 
@@ -102,9 +97,6 @@
     @include mq("medium") {
       top: em(320px);
       right: em(-30px);
-      // @include mq("large") {
-      //   right: em(-370px);
-      // }
     }
   }
 
@@ -113,10 +105,6 @@
     @include mq("medium") {
       top: em(190px);
       right: em(-380px);
-      // @include mq("large") {
-      //   top: em(180px);
-      //   right: em(-720px);
-      // }
     }
   }
 
@@ -125,10 +113,6 @@
     @include mq("medium") {
       top: em(320px);
       right: em(-315px);
-      // @include mq("large") {
-      //   top: em(310px);
-      //   right: em(-655px);
-      // }
     }
   }
 
@@ -137,58 +121,38 @@
     @include mq("medium") {
       top: em(450px);
       right: em(-250px);
-      // @include mq("large") {
-      //   top: em(440px);
-      //   right: em(-590px);
-      // }
     }
   }
 
   #b7 {
-    top: em(1600px);
+    top: em(1550px);
     @include mq("medium") {
-      top: em(880px);
+      top: em(850px);
       right: em(-185px);
-    //   @include mq("large") {
-    //     top: em(60px);
-    //     right: em(-210px);
       }
-    // }
-  }
+    }
 
   #b8 {
-    top: em(1820px);
+    top: em(1770px);
     @include mq("medium") {
-      top: em(1010px);
+      top: em(980px);
       right: em(-120px);
-    //   @include mq("large") {
-    //     top: em(190px);
-    //     right: em(-140px);
-    //   }
     }
   }
 
   #b9 {
-    top: em(2040px);
+    top: em(1990px);
     @include mq("medium") {
-      top: em(1145px);
-      right: em(-50px);
-    //   @include mq("large") {
-    //     top: em(190px);
-    //     right: em(-140px);
-    //   }
+      top: em(1110px);
+      right: em(-55px);
     }
   }
 
   #b10 {
-    top: em(2260px);
+    top: em(2210px);
     @include mq("medium") {
-      top: em(1010px);
+      top: em(980px);
       right: em(-400px);
-    //   @include mq("large") {
-    //     top: em(190px);
-    //     right: em(-140px);
-    //   }
     }
   }
 
